@@ -1,0 +1,38 @@
+// Calculer la variable ENVIRONNEMENT pour les pages CAS 
+var ENVIRONNEMENT = 'NO_ENV';
+var ENV_IS_CAS	  = false;
+if (window.location.host.match(/connexion-mabanque.bnpparibas/) !== null) {
+	ENV_IS_CAS	   = true;
+ 	if(window.location.href.match(/prev-m-wev/) !== null){
+	    ENVIRONNEMENT = 'PREVIEW';
+	} else {
+	    ENVIRONNEMENT = 'PROD';
+	}
+}
+if (window.location.host.match(/login.mabanque.dev.echonet/) !== null) {
+ ENVIRONNEMENT = 'INTE';
+ ENV_IS_CAS	   = true;
+}
+if (window.location.host.match(/login.mabanque.staging.bnpparibas.net/) !== null) {
+ ENVIRONNEMENT = 'QUALIF';
+ ENV_IS_CAS	   = true;
+}
+if (window.location.host.match(/localhost/) !== null) {
+ ENVIRONNEMENT = 'LOCAL';
+ ENV_IS_CAS	   = true;
+}
+
+/**
+* Paramètre url
+*  {string} name Nom du paramètre
+**/
+function GetURLParameter(sParam) {
+    var sPageURL = window.location.search.substring(1);
+    var sURLVariables = sPageURL.split('&');
+    for (var i = 0; i < sURLVariables.length; i++) {
+        var sParameterName = sURLVariables[i].split('=');
+        if (sParameterName[0] == sParam) {
+            return sParameterName[1];
+        }
+    }
+}

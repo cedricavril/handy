@@ -1,0 +1,316 @@
+
+2023-02-11 12:55:00  | INFO | Purge post on transition post STATUS from new to publish
+2023-02-11 12:55:00  | INFO | * * * * *
+2023-02-11 12:55:00  | INFO | * Blog :: Mon site Web ( 1 ).
+2023-02-11 12:55:00  | INFO | * Custom post type 'wpcf7_contact_form' :: Contact form 1 ( 100 ).
+2023-02-11 12:55:00  | INFO | * CPT 'wpcf7_contact_form' ( 100 ) published or edited and its status is published
+2023-02-11 12:55:00  | INFO | * * * * *
+2023-02-11 12:55:00  | INFO | Function purge_post BEGIN ===
+2023-02-11 12:55:00  | INFO | Purge de la page d'accueil https://tut1bank.com/wd1/
+2023-02-11 12:55:00  | INFO | - Purging URL | https://tut1bank.com/wd1/
+2023-02-11 12:55:00  | INFO | https://tut1bank.com/--api/cache-purge/wd1/ : NOK
+
+
+2023-02-11 12:55:00  | INFO | - - https://tut1bank.com/--api/cache-purge/wd1/ is currently not cached
+2023-02-11 12:55:00  | INFO | https://tut1bank.com/--api/cache-purge/wd1/feed/ : NOK
+
+
+2023-02-11 12:55:00  | INFO | - - https://tut1bank.com/--api/cache-purge/wd1/feed/ is currently not cached
+2023-02-11 12:55:00  | INFO | https://tut1bank.com/--api/cache-purge/wd1/feed/atom/ : NOK
+
+
+2023-02-11 12:55:00  | INFO | - - https://tut1bank.com/--api/cache-purge/wd1/feed/atom/ is currently not cached
+2023-02-11 12:55:00  | INFO | https://tut1bank.com/--api/cache-purge/wd1/feed/rdf/ : NOK
+
+
+2023-02-11 12:55:00  | INFO | - - https://tut1bank.com/--api/cache-purge/wd1/feed/rdf/ is currently not cached
+2023-02-11 12:55:00  | INFO | Purging custom post type 'wpcf7_contact_form' ( id 100, blog id 1 )
+2023-02-11 12:55:00  | INFO | - Purging URL | https://tut1bank.com/wd1/?post_type=wpcf7_contact_form&p=100
+2023-02-11 12:55:00  | INFO | https://tut1bank.com/--api/cache-purge/wd1/?post_type=wpcf7_contact_form&p=100 : NOK
+
+
+2023-02-11 12:55:00  | INFO | - - https://tut1bank.com/--api/cache-purge/wd1/?post_type=wpcf7_contact_form&p=100 is currently not cached
+2023-02-11 12:55:00  | INFO | https://tut1bank.com/--api/cache-purge/wd1/feed/ : NOK
+
+
+2023-02-11 12:55:00  | INFO | - - https://tut1bank.com/--api/cache-purge/wd1/feed/ is currently not cached
+2023-02-11 12:55:00  | INFO | https://tut1bank.com/--api/cache-purge/wd1/feed/atom/ : NOK
+
+
+2023-02-11 12:55:00  | INFO | - - https://tut1bank.com/--api/cache-purge/wd1/feed/atom/ is currently not cached
+2023-02-11 12:55:00  | INFO | https://tut1bank.com/--api/cache-purge/wd1/feed/rdf/ : NOK
+
+
+2023-02-11 12:55:00  | INFO | - - https://tut1bank.com/--api/cache-purge/wd1/feed/rdf/ is currently not cached
+2023-02-11 12:55:00  | INFO | Purging category archives
+2023-02-11 12:55:00  | INFO | Purging author archive
+2023-02-11 12:55:00  | INFO | - Purging URL | https://tut1bank.com/wd1/author/admin/
+2023-02-11 12:55:00  | INFO | https://tut1bank.com/--api/cache-purge/wd1/author/admin/ : NOK
+
+
+2023-02-11 12:55:00  | INFO | - - https://tut1bank.com/--api/cache-purge/wd1/author/admin/ is currently not cached
+2023-02-11 12:55:00  | INFO | https://tut1bank.com/--api/cache-purge/wd1/author/admin/feed/ : NOK
+
+
+2023-02-11 12:55:00  | INFO | - - https://tut1bank.com/--api/cache-purge/wd1/author/admin/feed/ is currently not cached
+2023-02-11 12:55:00  | INFO | https://tut1bank.com/--api/cache-purge/wd1/author/admin/feed/atom/ : NOK
+
+
+2023-02-11 12:55:00  | INFO | - - https://tut1bank.com/--api/cache-purge/wd1/author/admin/feed/atom/ is currently not cached
+2023-02-11 12:55:00  | INFO | https://tut1bank.com/--api/cache-purge/wd1/author/admin/feed/rdf/ : NOK
+
+
+2023-02-11 12:55:00  | INFO | - - https://tut1bank.com/--api/cache-purge/wd1/author/admin/feed/rdf/ is currently not cached
+2023-02-11 12:55:00  | INFO | Function purge_post END ^^^
+2023-02-11 12:55:02  | INFO | Purge post on transition post STATUS from new to publish
+2023-02-11 12:55:02  | INFO | * * * * *
+2023-02-11 12:55:02  | INFO | * Blog :: Mon site Web ( 1 ).
+2023-02-11 12:55:02  | INFO | * Custom post type 'elementor_library' :: Default Kit ( 101 ).
+2023-02-11 12:55:02  | INFO | * CPT 'elementor_library' ( 101 ) published or edited and its status is published
+2023-02-11 12:55:02  | INFO | * * * * *
+2023-02-11 12:55:02  | INFO | Function purge_post BEGIN ===
+2023-02-11 12:55:02  | INFO | Purge de la page d'accueil https://tut1bank.com/wd1/
+2023-02-11 12:55:02  | INFO | - Purging URL | https://tut1bank.com/wd1/
+2023-02-11 12:55:02  | INFO | https://tut1bank.com/--api/cache-purge/wd1/ : NOK
+
+
+2023-02-11 12:55:02  | INFO | - - https://tut1bank.com/--api/cache-purge/wd1/ is currently not cached
+2023-02-11 12:55:02  | INFO | https://tut1bank.com/--api/cache-purge/wd1/feed/ : NOK
+
+
+2023-02-11 12:55:02  | INFO | - - https://tut1bank.com/--api/cache-purge/wd1/feed/ is currently not cached
+2023-02-11 12:55:02  | INFO | https://tut1bank.com/--api/cache-purge/wd1/feed/atom/ : NOK
+
+
+2023-02-11 12:55:02  | INFO | - - https://tut1bank.com/--api/cache-purge/wd1/feed/atom/ is currently not cached
+2023-02-11 12:55:02  | INFO | https://tut1bank.com/--api/cache-purge/wd1/feed/rdf/ : NOK
+
+
+2023-02-11 12:55:02  | INFO | - - https://tut1bank.com/--api/cache-purge/wd1/feed/rdf/ is currently not cached
+2023-02-11 12:55:02  | INFO | Purging custom post type 'elementor_library' ( id 101, blog id 1 )
+2023-02-11 12:55:02  | INFO | - Purging URL | https://tut1bank.com/wd1/?p=101
+2023-02-11 12:55:02  | INFO | https://tut1bank.com/--api/cache-purge/wd1/?p=101 : NOK
+
+
+2023-02-11 12:55:02  | INFO | - - https://tut1bank.com/--api/cache-purge/wd1/?p=101 is currently not cached
+2023-02-11 12:55:02  | INFO | https://tut1bank.com/--api/cache-purge/wd1/feed/ : NOK
+
+
+2023-02-11 12:55:02  | INFO | - - https://tut1bank.com/--api/cache-purge/wd1/feed/ is currently not cached
+2023-02-11 12:55:02  | INFO | https://tut1bank.com/--api/cache-purge/wd1/feed/atom/ : NOK
+
+
+2023-02-11 12:55:02  | INFO | - - https://tut1bank.com/--api/cache-purge/wd1/feed/atom/ is currently not cached
+2023-02-11 12:55:02  | INFO | https://tut1bank.com/--api/cache-purge/wd1/feed/rdf/ : NOK
+
+
+2023-02-11 12:55:02  | INFO | - - https://tut1bank.com/--api/cache-purge/wd1/feed/rdf/ is currently not cached
+2023-02-11 12:55:02  | INFO | Purging category archives
+2023-02-11 12:55:02  | INFO | Purging author archive
+2023-02-11 12:55:02  | INFO | - Purging URL | https://tut1bank.com/wd1/author/admin/
+2023-02-11 12:55:02  | INFO | https://tut1bank.com/--api/cache-purge/wd1/author/admin/ : NOK
+
+
+2023-02-11 12:55:02  | INFO | - - https://tut1bank.com/--api/cache-purge/wd1/author/admin/ is currently not cached
+2023-02-11 12:55:02  | INFO | https://tut1bank.com/--api/cache-purge/wd1/author/admin/feed/ : NOK
+
+
+2023-02-11 12:55:02  | INFO | - - https://tut1bank.com/--api/cache-purge/wd1/author/admin/feed/ is currently not cached
+2023-02-11 12:55:02  | INFO | https://tut1bank.com/--api/cache-purge/wd1/author/admin/feed/atom/ : NOK
+
+
+2023-02-11 12:55:02  | INFO | - - https://tut1bank.com/--api/cache-purge/wd1/author/admin/feed/atom/ is currently not cached
+2023-02-11 12:55:02  | INFO | https://tut1bank.com/--api/cache-purge/wd1/author/admin/feed/rdf/ : NOK
+
+
+2023-02-11 12:55:02  | INFO | - - https://tut1bank.com/--api/cache-purge/wd1/author/admin/feed/rdf/ is currently not cached
+2023-02-11 12:55:02  | INFO | Function purge_post END ^^^
+2023-02-11 13:36:13  | INFO | Purge post on transition post STATUS from publish to trash
+2023-02-11 13:36:13  | INFO | * * * * *
+2023-02-11 13:36:13  | INFO | * Blog :: Mon site Web ( 1 ).
+2023-02-11 13:36:13  | INFO | * Custom post type 'customize_changeset' ::  ( 102 ).
+2023-02-11 13:36:13  | INFO | * CPT 'customize_changeset' ( 102 ) published or edited and its status is published
+2023-02-11 13:36:13  | INFO | * * * * *
+2023-02-11 13:36:13  | INFO | Function purge_post BEGIN ===
+2023-02-11 13:36:13  | INFO | Purge de la page d'accueil https://tut1bank.com/wd1/
+2023-02-11 13:36:13  | INFO | - Purging URL | https://tut1bank.com/wd1/
+2023-02-11 13:36:13  | INFO | https://tut1bank.com/--api/cache-purge/wd1/ : NOK
+
+
+2023-02-11 13:36:13  | INFO | - - https://tut1bank.com/--api/cache-purge/wd1/ is currently not cached
+2023-02-11 13:36:13  | INFO | https://tut1bank.com/--api/cache-purge/wd1/feed/ : NOK
+
+
+2023-02-11 13:36:13  | INFO | - - https://tut1bank.com/--api/cache-purge/wd1/feed/ is currently not cached
+2023-02-11 13:36:13  | INFO | https://tut1bank.com/--api/cache-purge/wd1/feed/atom/ : NOK
+
+
+2023-02-11 13:36:13  | INFO | - - https://tut1bank.com/--api/cache-purge/wd1/feed/atom/ is currently not cached
+2023-02-11 13:36:13  | INFO | https://tut1bank.com/--api/cache-purge/wd1/feed/rdf/ : NOK
+
+
+2023-02-11 13:36:13  | INFO | - - https://tut1bank.com/--api/cache-purge/wd1/feed/rdf/ is currently not cached
+2023-02-11 13:36:13  | INFO | Purging custom post type 'customize_changeset' ( id 102, blog id 1 )
+2023-02-11 13:36:13  | INFO | - Purging URL | https://tut1bank.com/wd1/?p=102
+2023-02-11 13:36:13  | INFO | https://tut1bank.com/--api/cache-purge/wd1/?p=102 : NOK
+
+
+2023-02-11 13:36:13  | INFO | - - https://tut1bank.com/--api/cache-purge/wd1/?p=102 is currently not cached
+2023-02-11 13:36:13  | INFO | https://tut1bank.com/--api/cache-purge/wd1/feed/ : NOK
+
+
+2023-02-11 13:36:13  | INFO | - - https://tut1bank.com/--api/cache-purge/wd1/feed/ is currently not cached
+2023-02-11 13:36:13  | INFO | https://tut1bank.com/--api/cache-purge/wd1/feed/atom/ : NOK
+
+
+2023-02-11 13:36:13  | INFO | - - https://tut1bank.com/--api/cache-purge/wd1/feed/atom/ is currently not cached
+2023-02-11 13:36:13  | INFO | https://tut1bank.com/--api/cache-purge/wd1/feed/rdf/ : NOK
+
+
+2023-02-11 13:36:13  | INFO | - - https://tut1bank.com/--api/cache-purge/wd1/feed/rdf/ is currently not cached
+2023-02-11 13:36:13  | INFO | Purging category archives
+2023-02-11 13:36:13  | INFO | Purging author archive
+2023-02-11 13:36:13  | INFO | - Purging URL | https://tut1bank.com/wd1/author/admin/
+2023-02-11 13:36:14  | INFO | https://tut1bank.com/--api/cache-purge/wd1/author/admin/ : NOK
+
+
+2023-02-11 13:36:14  | INFO | - - https://tut1bank.com/--api/cache-purge/wd1/author/admin/ is currently not cached
+2023-02-11 13:36:14  | INFO | https://tut1bank.com/--api/cache-purge/wd1/author/admin/feed/ : NOK
+
+
+2023-02-11 13:36:14  | INFO | - - https://tut1bank.com/--api/cache-purge/wd1/author/admin/feed/ is currently not cached
+2023-02-11 13:36:14  | INFO | https://tut1bank.com/--api/cache-purge/wd1/author/admin/feed/atom/ : NOK
+
+
+2023-02-11 13:36:14  | INFO | - - https://tut1bank.com/--api/cache-purge/wd1/author/admin/feed/atom/ is currently not cached
+2023-02-11 13:36:14  | INFO | https://tut1bank.com/--api/cache-purge/wd1/author/admin/feed/rdf/ : NOK
+
+
+2023-02-11 13:36:14  | INFO | - - https://tut1bank.com/--api/cache-purge/wd1/author/admin/feed/rdf/ is currently not cached
+2023-02-11 13:36:14  | INFO | Purging custom taxonomies related
+2023-02-11 13:36:14  | INFO | Function purge_post END ^^^
+2023-02-11 13:36:14  | INFO | # # # # #
+2023-02-11 13:36:14  | INFO | # Post '' (  id 102 ) moved to the trash.
+2023-02-11 13:36:14  | INFO | # # # # #
+2023-02-11 13:36:14  | INFO | Function purge_on_post_moved_to_trash ( post id 102 ) BEGIN ===
+2023-02-11 13:36:14  | INFO | Purge de la page d'accueil https://tut1bank.com/wd1/
+2023-02-11 13:36:14  | INFO | - Purging URL | https://tut1bank.com/wd1/
+2023-02-11 13:36:14  | INFO | https://tut1bank.com/--api/cache-purge/wd1/ : NOK
+
+
+2023-02-11 13:36:14  | INFO | - - https://tut1bank.com/--api/cache-purge/wd1/ is currently not cached
+2023-02-11 13:36:14  | INFO | https://tut1bank.com/--api/cache-purge/wd1/feed/ : NOK
+
+
+2023-02-11 13:36:14  | INFO | - - https://tut1bank.com/--api/cache-purge/wd1/feed/ is currently not cached
+2023-02-11 13:36:14  | INFO | https://tut1bank.com/--api/cache-purge/wd1/feed/atom/ : NOK
+
+
+2023-02-11 13:36:14  | INFO | - - https://tut1bank.com/--api/cache-purge/wd1/feed/atom/ is currently not cached
+2023-02-11 13:36:14  | INFO | https://tut1bank.com/--api/cache-purge/wd1/feed/rdf/ : NOK
+
+
+2023-02-11 13:36:14  | INFO | - - https://tut1bank.com/--api/cache-purge/wd1/feed/rdf/ is currently not cached
+2023-02-11 13:36:14  | INFO | Purging custom post type 'customize_changeset' ( id 102, blog id 1 )
+2023-02-11 13:36:14  | INFO | - Purging URL | https://tut1bank.com/wd1/?p=102
+2023-02-11 13:36:14  | INFO | https://tut1bank.com/--api/cache-purge/wd1/?p=102 : NOK
+
+
+2023-02-11 13:36:14  | INFO | - - https://tut1bank.com/--api/cache-purge/wd1/?p=102 is currently not cached
+2023-02-11 13:36:14  | INFO | https://tut1bank.com/--api/cache-purge/wd1/feed/ : NOK
+
+
+2023-02-11 13:36:14  | INFO | - - https://tut1bank.com/--api/cache-purge/wd1/feed/ is currently not cached
+2023-02-11 13:36:14  | INFO | https://tut1bank.com/--api/cache-purge/wd1/feed/atom/ : NOK
+
+
+2023-02-11 13:36:14  | INFO | - - https://tut1bank.com/--api/cache-purge/wd1/feed/atom/ is currently not cached
+2023-02-11 13:36:14  | INFO | https://tut1bank.com/--api/cache-purge/wd1/feed/rdf/ : NOK
+
+
+2023-02-11 13:36:14  | INFO | - - https://tut1bank.com/--api/cache-purge/wd1/feed/rdf/ is currently not cached
+2023-02-11 13:36:14  | INFO | Purging category archives
+2023-02-11 13:36:14  | INFO | Purging author archive
+2023-02-11 13:36:14  | INFO | - Purging URL | https://tut1bank.com/wd1/author/admin/
+2023-02-11 13:36:14  | INFO | https://tut1bank.com/--api/cache-purge/wd1/author/admin/ : NOK
+
+
+2023-02-11 13:36:14  | INFO | - - https://tut1bank.com/--api/cache-purge/wd1/author/admin/ is currently not cached
+2023-02-11 13:36:14  | INFO | https://tut1bank.com/--api/cache-purge/wd1/author/admin/feed/ : NOK
+
+
+2023-02-11 13:36:14  | INFO | - - https://tut1bank.com/--api/cache-purge/wd1/author/admin/feed/ is currently not cached
+2023-02-11 13:36:14  | INFO | https://tut1bank.com/--api/cache-purge/wd1/author/admin/feed/atom/ : NOK
+
+
+2023-02-11 13:36:14  | INFO | - - https://tut1bank.com/--api/cache-purge/wd1/author/admin/feed/atom/ is currently not cached
+2023-02-11 13:36:14  | INFO | https://tut1bank.com/--api/cache-purge/wd1/author/admin/feed/rdf/ : NOK
+
+
+2023-02-11 13:36:14  | INFO | - - https://tut1bank.com/--api/cache-purge/wd1/author/admin/feed/rdf/ is currently not cached
+2023-02-11 13:36:14  | INFO | Purging custom taxonomies related
+2023-02-11 13:36:14  | INFO | Function purge_on_post_moved_to_trash ( post id 102 ) END ===
+2023-02-11 13:36:14  | INFO | Purge post on transition post STATUS from auto-draft to publish
+2023-02-11 13:36:14  | INFO | * * * * *
+2023-02-11 13:36:14  | INFO | * Blog :: Mon site Web ( 1 ).
+2023-02-11 13:36:14  | INFO | * Custom post type 'customize_changeset' ::  ( 102 ).
+2023-02-11 13:36:14  | INFO | * CPT 'customize_changeset' ( 102 ) published or edited and its status is published
+2023-02-11 13:36:14  | INFO | * * * * *
+2023-02-11 13:36:14  | INFO | Function purge_post BEGIN ===
+2023-02-11 13:36:14  | INFO | Purge de la page d'accueil https://tut1bank.com/wd1/
+2023-02-11 13:36:14  | INFO | - Purging URL | https://tut1bank.com/wd1/
+2023-02-11 13:36:14  | INFO | https://tut1bank.com/--api/cache-purge/wd1/ : NOK
+
+
+2023-02-11 13:36:14  | INFO | - - https://tut1bank.com/--api/cache-purge/wd1/ is currently not cached
+2023-02-11 13:36:14  | INFO | https://tut1bank.com/--api/cache-purge/wd1/feed/ : NOK
+
+
+2023-02-11 13:36:14  | INFO | - - https://tut1bank.com/--api/cache-purge/wd1/feed/ is currently not cached
+2023-02-11 13:36:14  | INFO | https://tut1bank.com/--api/cache-purge/wd1/feed/atom/ : NOK
+
+
+2023-02-11 13:36:14  | INFO | - - https://tut1bank.com/--api/cache-purge/wd1/feed/atom/ is currently not cached
+2023-02-11 13:36:14  | INFO | https://tut1bank.com/--api/cache-purge/wd1/feed/rdf/ : NOK
+
+
+2023-02-11 13:36:14  | INFO | - - https://tut1bank.com/--api/cache-purge/wd1/feed/rdf/ is currently not cached
+2023-02-11 13:36:14  | INFO | Purging custom post type 'customize_changeset' ( id 102, blog id 1 )
+2023-02-11 13:36:14  | INFO | - Purging URL | https://tut1bank.com/wd1/?p=102
+2023-02-11 13:36:14  | INFO | https://tut1bank.com/--api/cache-purge/wd1/?p=102 : NOK
+
+
+2023-02-11 13:36:14  | INFO | - - https://tut1bank.com/--api/cache-purge/wd1/?p=102 is currently not cached
+2023-02-11 13:36:14  | INFO | https://tut1bank.com/--api/cache-purge/wd1/feed/ : NOK
+
+
+2023-02-11 13:36:14  | INFO | - - https://tut1bank.com/--api/cache-purge/wd1/feed/ is currently not cached
+2023-02-11 13:36:14  | INFO | https://tut1bank.com/--api/cache-purge/wd1/feed/atom/ : NOK
+
+
+2023-02-11 13:36:14  | INFO | - - https://tut1bank.com/--api/cache-purge/wd1/feed/atom/ is currently not cached
+2023-02-11 13:36:14  | INFO | https://tut1bank.com/--api/cache-purge/wd1/feed/rdf/ : NOK
+
+
+2023-02-11 13:36:14  | INFO | - - https://tut1bank.com/--api/cache-purge/wd1/feed/rdf/ is currently not cached
+2023-02-11 13:36:14  | INFO | Purging category archives
+2023-02-11 13:36:14  | INFO | Purging author archive
+2023-02-11 13:36:14  | INFO | - Purging URL | https://tut1bank.com/wd1/author/admin/
+2023-02-11 13:36:14  | INFO | https://tut1bank.com/--api/cache-purge/wd1/author/admin/ : NOK
+
+
+2023-02-11 13:36:14  | INFO | - - https://tut1bank.com/--api/cache-purge/wd1/author/admin/ is currently not cached
+2023-02-11 13:36:14  | INFO | https://tut1bank.com/--api/cache-purge/wd1/author/admin/feed/ : NOK
+
+
+2023-02-11 13:36:14  | INFO | - - https://tut1bank.com/--api/cache-purge/wd1/author/admin/feed/ is currently not cached
+2023-02-11 13:36:14  | INFO | https://tut1bank.com/--api/cache-purge/wd1/author/admin/feed/atom/ : NOK
+
+
+2023-02-11 13:36:14  | INFO | - - https://tut1bank.com/--api/cache-purge/wd1/author/admin/feed/atom/ is currently not cached
+2023-02-11 13:36:14  | INFO | https://tut1bank.com/--api/cache-purge/wd1/author/admin/feed/rdf/ : NOK
+
+
+2023-02-11 13:36:14  | INFO | - - https://tut1bank.com/--api/cache-purge/wd1/author/admin/feed/rdf/ is currently not cached
+2023-02-11 13:36:14  | INFO | Purging custom taxonomies related
+2023-02-11 13:36:14  | INFO | Function purge_post END ^^^

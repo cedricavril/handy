@@ -1,0 +1,14 @@
+function callPfbp(){
+	// Recuperer id TMX
+	var idTmx=document.getElementById('idTMX').value;
+	var siteId= document.querySelector('meta[name="siteid"]').content;
+	var subDomain=document.querySelector('meta[name="subDomain"]').content;
+	var orgId=document.querySelector('meta[name="orgId"]').content;
+	var pageId=document.querySelector('meta[name="pageId"]').content;
+			
+		
+	console.log("idTmx=",idTmx);
+
+	bjtdzi1212.pfbp(subDomain,orgId,idTmx,pageId);
+}
+

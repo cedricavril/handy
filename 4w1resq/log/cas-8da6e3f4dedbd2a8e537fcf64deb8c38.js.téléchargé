@@ -1,0 +1,49 @@
+$(document).ready(function(){
+    //focus username field
+    if ($(":focus").length === 0){
+      $("input:visible:enabled:first").trigger('focus');
+    }
+
+    //flash error box
+    $('#msg.errors').animate({ backgroundColor: 'rgb(187,0,0)' }, 30).animate({ backgroundColor: 'rgb(255,238,221)' }, 500);
+
+    //flash success box
+    $('#msg.success').animate({ backgroundColor: 'rgb(51,204,0)' }, 30).animate({ backgroundColor: 'rgb(221,255,170)' }, 500);
+    
+    //flash confirm box
+    $('#msg.question').animate({ backgroundColor: 'rgb(51,204,0)' }, 30).animate({ backgroundColor: 'rgb(221,255,170)' }, 500);
+    
+    /* 
+     * Using the JavaScript Debug library, you may issue log messages such as: 
+     * debug.log("Welcome to Central Authentication Service");
+     */
+    $('#username').prop('value','');
+    $('#gridPosition').prop('value','');
+    if (typeof positionCount !== 'undefined') {
+	    for (var idx = 0; idx < positionCount; idx++) {
+	    	$("#secret-nbr-keyboard").append('<a href="javascript:void(0)"></a>');
+	    }    
+	    var pass = $('#secret-nbr');
+	    var formSubmit = $('#submitIdent');
+	    var clientId = $('#username');
+	    var gridPosition=$('#gridPosition');
+	    
+	    $("#secret-nbr-keyboard > a").each(function() {
+	    	$(this).click(function() {
+	    	    if(pass.val().length < 6 ) {
+	    	        gridPosition.val(gridPosition.val() + padValue($(this).index()+1, 2));
+				    pass.val(pass.val()+"*"); // GUI
+	    	    } 
+	    	    if(clientId.val().length && pass.val().length === 6) {
+	    	        formSubmit.prop('disabled', false); 
+	    	    }
+	    	})
+		});
+    }
+});
+
+function padValue(idx, maxLength) {
+	return (""+idx).length < maxLength ? padValue(("0"+idx), maxLength) : idx;
+}
+
+function resourceLoadedSuccessfully() { /*nothing*/ }

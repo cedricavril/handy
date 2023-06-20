@@ -1,0 +1,47 @@
+/************************************************
+ * Keep alive functionality implementation
+ ************************************************/
+
+//Default values
+//session default value = 14 min = 840000 ms 
+var sessionDuration = 840000;//14 minutes
+//Default value, extending session before 20 seconds of timeout
+var beforeTimeout = 20000;
+var sessionExtensionEndpoint;// Global scope
+
+$(function() {
+	//Initializing variables
+	sessionExtensionEndpoint = $('meta[name=sessionExtensionEndpoint]').attr("content");
+	console.log("sessionExtensionEndpoint = " + sessionExtensionEndpoint);
+	if (typeof sessionExtensionEndpoint == 'undefined') {
+		return;
+	}
+	if (typeof $('meta[name=sessionDurationInSeconds]').attr("content") != 'undefined'){
+		sessionDuration = parseInt($('meta[name=sessionDurationInSeconds]').attr("content")) * 1000;
+	} 
+	console.log("sessionDuration = " + sessionDuration);
+	if(typeof $('meta[name=beforeTimeout]').attr("content") != 'undefined'){
+		beforeTimeout = parseInt($('meta[name=beforeTimeout]').attr("content")) * 1000;
+	}
+	console.log("beforeTimeout = " + beforeTimeout);
+	// Calling function to extend session after document ready event fire to avoid possible issues caused by page loading delay.   
+	extendSession();
+	keepAlive();
+});
+
+/**
+ * Extending session 
+ */
+function keepAlive() {
+		window.setInterval(function() {
+			extendSession();
+		}, sessionDuration - beforeTimeout);
+}
+
+function extendSession(){
+	$.get(sessionExtensionEndpoint, function(data) {
+		console.log("Session extended");
+	}).fail(function() {
+		console.log("Error : Can't extend Session !");
+	  });
+}

@@ -1,0 +1,1 @@
+document.querySelector(".browserupgrade").innerHTML=document.querySelector("#noscript").textContent;

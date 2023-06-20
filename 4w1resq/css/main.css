@@ -1,0 +1,72 @@
+
+
+
+input[type="password"] {
+  padding: 0 40px;
+  border-radius: 5px;
+  width: 350px;
+  margin: auto;
+  border: 1px solid rgb(228, 220, 220);
+  outline: none;
+  font-size: 60px;
+  color: transparent;
+  text-shadow: 0 0 0 rgb(71, 71, 71);
+  text-align: center;
+}
+
+input:focus {
+  outline: none;
+}
+
+.pinButton {
+ 
+  border: 1px solid #F0FFFF;
+ color: #F0FFFF;
+  background: none;
+  font-size: 1.5em;
+ 
+  height: 50px;
+  font-weight: 550;
+  width: 31%;
+  
+  text-shadow: 0 0 0 rgb(102, 101, 101);
+  margin: 1px 1px;
+}
+#pinpad {
+ 
+   
+  width: 100%;
+  color: transparent;
+  
+}
+
+
+.clear,
+.enter {
+  font-size: 1em !important;
+  height: 50px;
+   width: 31%;
+   margin: 1px 1px;
+}
+
+.pinButton:hover {
+  box-shadow: #506ce8 0 0 1px 1px;
+}
+.pinButton:active {
+  background: #506ce8;
+  color: #fff;
+}
+.clear:hover {
+  box-shadow: #ff3c41 0 0 1px 1px;
+}
+.clear:active {
+  background: #ff3c41;
+  color: #fff;
+}
+.enter:hover {
+  box-shadow: #47cf73 0 0 1px 1px;
+}
+.enter:active {
+  background: #47cf73;
+  color: #fff;
+}

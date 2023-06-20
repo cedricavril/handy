@@ -1,0 +1,19 @@
+var ui_version = '3.6.0';
+
+// configure self hosted UC crooss domain bridge
+pref = window.location.origin + window.location.pathname;
+window.UC_UI_DOMAINS = {
+  crossDomainConsentSharingIFrame:
+    pref + `assets/scripts/cross-domain-bridge.html`,
+};
+
+// load the UC
+var script = document.createElement('script');
+script.src = 'assets/scripts/usercentrics-' + ui_version + '.js';
+script.id = 'usercentrics-cmp';
+if (typeof Storage !== 'undefined') {
+  localStorage.setItem('uc_ui_version', ui_version);
+}
+script.dataset.settingsId = 'xSrVHkQp_';
+script.async = true;
+document.head.appendChild(script);

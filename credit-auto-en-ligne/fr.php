@@ -1,0 +1,587 @@
+﻿<?php session_start(); ?>
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+
+	<!-- Page Title -->
+    <link rel="profile" href="//gmpg.org/xfn/11">
+    <meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' />
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta property="og:locale" content="fr">
+	<meta property="og:url" content="https://bpt-finances.com/credit-auto-en-ligne/fr">
+	<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=0, width=device-width">
+	<meta property="og:type" content="website">
+	<meta property="og:image" content="https://bpt-finances.com/front/assets/images/logo.png">
+	<meta name="author" content="bpt-finances.com">
+	<meta name="description" content="Crédit auto, en plus rapide, adapter a vos besoins ! Obtenez votre emprunt en 24h, à des taux imbattables jusqu&#039;à 350 000€, sans frais de remboursement anticipé !">
+	<meta property="og:title" content="Crédit auto en Ligne – Réponse en 24h | BPT FINANCES">
+	<meta property="og:site_name" content="Crédit auto en Ligne – Réponse en 24h | BPT FINANCES">
+	<title>Crédit auto en Ligne – Réponse en 24h | BPT FINANCES</title>
+	
+	
+    <!-- External CSS libraries -->
+    <link type="text/css" rel="stylesheet" href="../site/assets/css/bootstrap.min.css">
+    <link type="text/css" rel="stylesheet" href="../site/assets/css/magnific-popup.css">
+    <link type="text/css" rel="stylesheet" href="../site/assets/css/jquery.selectBox.css">
+    <link type="text/css" rel="stylesheet" href="../site/assets/css/rangeslider.css">
+    <link type="text/css" rel="stylesheet" href="../site/assets/css/animate.min.css">
+    <link type="text/css" rel="stylesheet" href="../site/assets/css/jquery.mCustomScrollbar.css">
+    <link type="text/css" rel="stylesheet" href="../site/assets/fonts/font-awesome/css/font-awesome.min.css">
+    <link type="text/css" rel="stylesheet" href="../site/assets/fonts/flaticon/font/flaticon.css">
+
+    <!-- Favicon icon -->
+    <link rel="shortcut icon" href="https://bpt-finances.com/site/assets/img/favicon.png" type="image/x-icon">
+
+    <!-- Google fonts -->
+    <link rel="stylesheet" type="text/css" href="../css?family=Open+Sans:400,300,600,700,800%7CPoppins:400,500,700,800,900%7CRoboto:100,300,400,400i,500,700">
+
+    <!-- Custom Stylesheet -->
+    <link type="text/css" rel="stylesheet" href="../site/assets/css/style.css">
+    <link rel="stylesheet" type="text/css" href="../site/assets/css/skins/default.css">
+
+<style type="text/css">
+	body#top iframe{
+margin-left: -160px;
+width: 510px;
+	}
+</style>
+
+</head>
+<body id="top">
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PFGPK3H" height="0" width="0" style="display:none;visibility:hidden; "></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+<div class="page_loader"></div>
+<div id="traduction_site_web" style="position: absolute; 
+								top: 0; 
+								right: -160px; 
+								z-index: 1000;"></div>
+<!-- main header start -->
+
+<header class="main-header sticky-header" id="main-header-2" style="padding-top: 25px;">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <ul class="list-inline pull-right">
+                    
+                  <li class="list-inline-item"><a href="../index-1.htm">  </a></li>
+                  
+                   <li class="list-inline-item"><a href="../index-2.htm">  </a></li>
+                   
+                </ul>
+                
+                
+            <div>
+            <div>
+        <div class="row">
+            
+            <div class="col-12">
+                <nav class="navbar navbar-expand-lg navbar-light rounded">
+                    <a class="navbar-brand logox navbar-brand d-flex " href="../index-2.htm">
+                        <img src="../site/assets/img/logos/black-logo.png" alt="logo">
+                    </a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="fa fa-bars"></span>
+                    </button>
+                    <div class="navbar-collapse collapse w-100" id="navbar">
+                        <ul class="navbar-nav ml-auto">
+                            <li><a class="nav-link" href="../index-2.htm">Accueil</a></li>
+							
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown9" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Emprunter
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown9">
+                                    <a class="dropdown-item" href="../pret-personnel-en-ligne/fr.html">Prêt personnel</a>
+                                    <a class="dropdown-item" href="../credit-rapide-en-ligne/fr.html">Crédit rapide</a>
+                                    <a class="dropdown-item" href="fr.html">Crédit auto</a>
+                                    <a class="dropdown-item" href="../credit-immobilier-en-ligne/fr.html">Prêt immobilier</a>
+                                    <a class="dropdown-item" href="../credit-renouvelable-en-ligne/fr.html">Crédit renouvelable</a>
+                                </div>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Services
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                    <li><a class="dropdown-item" href="../tous-les-services-de-financement-en-ligne/fr.html">Tous les services</a></li>
+                                    <li><a class="dropdown-item" href="../creer-un-compte-bancaire-en-ligne/fr.html">Compte Bancaire</a></li>
+                                    <li><a class="dropdown-item" href="../meilleures-cartes-bancaires-en-ligne/fr.html">Cartes Bancaires</a></li>
+                                    <li><a class="dropdown-item" href="../financement-projets-en-ligne/fr.html">Financement</a></li>
+                                    <li><a class="dropdown-item" href="../meilleures-investissements-en-ligne/fr.html">Investissements </a></li>
+                                    <li><a class="dropdown-item" href="../assurance-personnelle-en-ligne/fr.html">Assurance</a></li>
+                                    <li><a class="dropdown-item" href="../epargner-votre-argent-en-ligne/fr.html">Epagne</a></li>
+                                </ul>
+                            </li>
+							
+							
+							
+							<li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Découverte
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                    <li><a class="dropdown-item" href="../a-propos-de-nous/fr.html">Qui sommes nous ?</a></li>
+                                    <li><a class="dropdown-item" href="../nos-projets/fr.html">Nos Projets</a></li>
+                                    <li><a class="dropdown-item" href="../mention-legale/fr.html">Mention légale</a></li>
+                                </ul>
+                            </li>
+							<li><a class="nav-link" href="../contactez-nous/fr.html">Contact</a></li>
+
+							
+							<li class="nav-item dropdown mtbl">
+                                <a class="btn btn-sm btn-theme btn-round signup-link" href="../index-2.htm#cloan">Demander un prêt </a></li>
+							<li class="nav-item dropdown mtbl">
+                                <a class="btn btn-sm btn-theme btn-round signup-link" href="https://www.bpt-finances.com/login.html">Espace client</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </div>
+</div></div></div></div></header>
+<!-- main header end -->
+
+	<div id="traduction_site_web" style="right: 0; position: absolute; margin-top: 94px; z-index: 1;"></div>
+
+	<!-- Sub banner start -->
+	<div class="sub-banner overview-bgi">
+		<div class="container">
+			<div class="breadcrumb-area">
+				<h1>Crédit auto</h1>
+				<ul class="breadcrumbs">
+					<li><a href="../index-2.htm">Accueil > </a></li>
+					<li><a href="#">Crédit auto</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<br>
+	<br>
+	<!-- Sub banner end -->
+
+
+        <!-- start service-single-section -->
+        <section class="service-single-section section-padding">
+            <div class="container">
+                <div class="row">
+                    <div class="col col-md-8 col-md-push-4">
+                        <div class="service-single-content">
+                            <article class="entry dashView h2-content-table">
+								<h2 id="Questcequelecrditauto">Qu’est ce que le crédit auto ?</h2>
+								<p></p>
+									<div class="img-wrapper" style="float: right;"><img class="alignright wp-image-1060 size-thumbnail lazyloaded" sizes="(max-width: 150px) 100vw, 150px" src="../front/credit-auto-01-150x150.png" width="150" height="150"></div>Vous envisagez d’acheter une nouvelle voiture.
+								<p>Qu’elle soit neuve ou d’occasion, le crédit auto vous permet de <strong>financer votre nouveau véhicule</strong> dès aujourd’hui.</p>
+								<p>Souscrire un prêt auto vous permet d’acheter la voiture dont vous avez besoin <strong>sans devoir attendre</strong> d’avoir mis assez d’argent de côté.</p>
+								<p>Cela vous évite ainsi de déséquilibrer votre budget ou de vous obliger à puiser dans votre épargne.</p>
+								<p>Il y a <strong>deux types de crédit auto</strong> vous permettant de financer votre voiture :</p>
+								<ol>
+									<li><strong>Le crédit auto affecté</strong> : c’est le crédit auto le plus courant. Il est uniquement dédié à l’achat d’un véhicule et ne peut pas financer d’autres projets.</li>
+									<li><strong>Le</strong><strong> prêt personnel auto</strong> : c’est un prêt personnel pour lequel vous n’avez pas besoin de justifier votre achat.</li>
+								</ol>
+								<table>
+									<tbody>
+										<tr>
+											<th>Différence</th>
+											<th>Crédit auto affecté</th>
+											<th>Prêt personnel auto</th>
+										</tr>
+										<tr>
+											<td><strong>Objet du prêt</strong></td>
+											<td>Dédié à l’achat d’un véhicule neuf ou d’occasion</td>
+											<td>Utilisation des fonds selon vos choix</td>
+										</tr>
+										<tr>
+											<td><strong>Si la vente est annulée</strong></td>
+											<td>Votre crédit est annulé</td>
+											<td>Votre crédit est maintenu</td>
+										</tr>
+										<tr>
+											<td><strong>Si vous n’obtenez pas votre crédit</strong></td>
+											<td>Le contrat de vente est nul et non avenu</td>
+											<td>Le contrat de vente reste valide</td>
+										</tr>
+										<tr>
+											<td><strong>Si votre voiture n’est pas réceptionnée</strong></td>
+											<td>Vous ne remboursez pas votre crédit</td>
+											<td>Vous remboursez votre crédit</td>
+										</tr>
+									</tbody>
+								</table>
+								<h2 id="Avantagesduprtautoenligne">Avantages du prêt auto en ligne</h2>
+								<p>Beaucoup de Français choisissent de financer leur voiture grâce à un crédit.</p>
+								<p>Voici les avantages à souscrire un crédit auto en ligne :</p>
+								<ul class="like">
+									<li>Financer votre voiture rapidement <strong>sans puiser dans votre épargne.</strong></li>
+									<li><strong>Si la vente de votre voiture est annulée</strong>, le crédit est annulée (avec le crédit auto affecté).</li>
+									<li><strong>Si vous n’obtenez pas votre crédit</strong>, le contrat de vente est nul et non avenu (avec le crédit auto affecté).</li>
+									<li>Les mensualités d’un crédit auto sont fixes, ce qui vous permet de <strong>planifier à l’avance votre remboursement.</strong></li>
+									<li><strong>Toute la procédure se fait en ligne</strong>. Pas besoin de se déplacer chez votre banquier.</li>
+								</ul>
+								
+								<h2 id="Fonctionnementducrditvoiture">Fonctionnement du crédit voiture</h2>
+								<p>Le prêt auto est destiné à toute personne qui souhaite acheter une voiture neuve ou d’occasion à crédit.</p>
+								<p>Voici concrètement comment fonctionne le crédit auto.</p>
+								
+								<p>Le montant du crédit auto peut aller <strong>de 3 000€ à 75 000€</strong>.</p>
+								<p>La durée d’un crédit auto est généralement comprise <strong>entre 4 et 84 mois</strong>.</p>
+								<p>La somme que vous pouvez emprunter est fonction :</p>
+								<ol>
+									<li>De <strong>vos revenus</strong></li>
+									<li>Du <strong>taux de votre crédit</strong></li>
+									<li>De sa <strong>durée de remboursement</strong></li>
+								</ol>
+								<div class="msg faq-box">
+									<h2 class="faq_inner" id="FAQsurlecrditauto">FAQ sur le crédit auto</h2>
+									<h4>Est-il possible de contracter un crédit auto en ligne ?</h4>
+									<div class="inner">
+										<p class="faq_inner">Oui, vous pouvez faire votre demande de prêt auto en ligne. Retrouvez les meilleures offres de crédit en ligne sur notre site.</p>
+									</div>
+									<h4>Comment trouver un crédit auto pas cher ?</h4>
+									<div class="inner">
+										<p class="faq_inner">Vous devez comparer les offres de prêt pour réussir à trouver le prêt auto le moins cher. Pour cela, vous pouvez utiliser notre <strong>simulateur crédit auto en ligne</strong> en haut de page.</p>
+									</div>
+									<h4>Comment financer sa voiture ?</h4>
+									<div class="inner">
+										<p class="faq_inner">Vous avez deux options :</p>
+										<ol class="faq_inner">
+											<li><strong>Payer comptant</strong>. Vous utilisez vos économies pour le financement de votre voiture.</li>
+											<li><strong>Faire un crédit auto</strong>. Vous utilisez l’argent de la banque pour acheter votre voiture et vous remboursez votre prêt petit à petit.</li>
+										</ol>
+									</div>
+									<h4>Le taux d’un crédit auto peut-il se négocier ?</h4>
+									<div class="inner">
+										<p class="faq_inner">Oui, vous avez le droit de négocier toute offre de crédit proposée par un banquier. D’ailleurs, <strong>nous vous recommandons fortement de négocier</strong> en faisant jouer la concurrence. Utilisez notre simulateur crédit auto pour dénicher un emprunt voiture moins cher.</p>
+									</div>
+									<h4>Dois-je faire une avance pour obtenir un crédit auto ?</h4>
+									<div class="inner">
+										<p class="faq_inner">Non, il n’est pas obligatoire de faire une avance ni même de fournir un apport personnel.</p>
+									</div>
+									<h4>Un délai de rétractation est-il prévu ?</h4>
+									<div class="inner">
+										<p class="faq_inner">Oui, la loi prévoit 14 jours calendaires (loi Lagarde en 2011) pour se rétracter après signature.</p>
+									</div>
+								</div>
+								<h2 id="Simulationcrditautoenligne">Simulation crédit auto en ligne</h2>
+								<p>
+									<div class="img-wrapper" style="float: right;"><img class="alignright wp-image-1062 size-thumbnail lazyloadwait" src="../front/credit-auto-03-150x150.png" alt="credit auto en ligne" srcset="" data-srcset="https://cdn.financer.com/fr/wp-content/uploads/sites/17/2017/09/credit-auto-03-150x150.png 150w, https://cdn.financer.com/fr/wp-content/uploads/sites/17/2017/09/credit-auto-03.png 300w" sizes="(max-width: 150px) 100vw, 150px" width="150" height="150"></div>Vous avez très certainement entendu parler de <strong>simulateur de crédit auto</strong>.</p>
+								<p>C’est tout simplement parce que cet outil vous permet de payer votre prêt auto moins cher.</p>
+								<p>Comment ?</p>
+								<p>En comparant pour vous et en seulement deux clics les offres de crédit les plus avantageuses du marché.</p>
+								<p>Vous souhaitez certainement vous aussi bénéficier de cet outil en ligne tant prisé des futurs emprunteurs.</p>
+								<p>C’est simple : rendez-vous en haut de cette page et lancez la simulation.</p>
+								<p>Vous pourrez ainsi trier les offres de prêt voiture en fonction des critères de votre choix et trouver <strong>le crédit auto le moins cher du marché</strong>.</p>
+								<div class="msg company">
+									<h2 class="" id="Crditautopascher">Crédit auto pas cher</h2>
+									<p>Après analyse des offres du marché, l’organisme financier le moins cher pour une demande de prêt auto est <strong>Younited Crédit</strong>. Nous vous recommandons cet établissement qui est aussi très bien noté auprès de nos utilisateurs.
+										<br>Demande de crédit auto pas cher</p>
+								</div>
+								<h2 id="Commentobtenirunprtauto">Comment obtenir un prêt auto</h2>
+								<p>Pour faire un emprunt voiture, vous devez suivre une série d’étapes avant de recevoir les fonds :</p>
+								<ol>
+									<li><strong>Comparer les offres de prêt voiture</strong> en ligne grâce à notre simulateur crédit auto en haut de cette page</li>
+									<li><strong>Remplir les formulaires de demande en ligne</strong></li>
+									<li><strong>Envoyer les documents justificatifs</strong>&nbsp;par email</li>
+									<li>Vous recevez une <strong>réponse de principe</strong>&nbsp;<strong>par email</strong></li>
+									<li><strong>Votre dossier est traité</strong> par l’organisme de crédit</li>
+									<li>Si votre demande est acceptée par la banque, <strong>vous recevez le devis personnalisé</strong> sans engagement par email ou courrier</li>
+									<li><strong>Renvoyer le dossier crédit signé</strong>&nbsp;de la banque</li>
+									<li><strong>Les fonds empruntés sont transférés</strong> sur votre compte bancaire</li>
+								</ol>
+								<h2 id="Choisirvotrecrditvoitureenligne">Choisir votre crédit voiture en ligne</h2>
+								<p>
+									<div class="img-wrapper" style="float: right;"><img class="alignright wp-image-1057 size-thumbnail lazyloadwait" src="../front/04credit-auto-01-150x150.png" alt="credit auto en ligne" srcset="" data-srcset="https://cdn.financer.com/fr/wp-content/uploads/sites/17/2017/09/04credit-auto-01-150x150.png 150w, https://cdn.financer.com/fr/wp-content/uploads/sites/17/2017/09/04credit-auto-01.png 300w" sizes="(max-width: 150px) 100vw, 150px" width="150" height="150"></div>On voudrait tous obtenir le <strong>crédit auto le moins cher</strong>.</p>
+								<p>C’est normal.</p>
+								<p>Pourquoi payer trop cher quand on peut comparer les offres de crédit les plus avantageuses grâce à un simulateur de crédit auto (en haut de cette page) ?</p>
+								<p>La <strong>simulation de prêt auto</strong> vous permet de dénicher des offres de crédit auto pas cher.</p>
+								<p>Pour choisir votre emprunt voiture, utilisez ces paramètres :</p>
+								<ul>
+									<li><strong>Le TAEG </strong>(Taux Annuel Effectif Global) comme critère de référence et de comparaison. Il représente le coût total du crédit.</li>
+									<li><strong>La durée du crédit</strong>. Le crédit auto est moins cher s’il est remboursé sur une durée plus courte mais les mensualités seront plus élevées. Et inversement.</li>
+									<li><strong>Le montant des mensualités</strong>. Déterminez le montant qui vous permettra d’intégrer la mensualité du crédit dans votre budget sans tomber dans le rouge.</li>
+								</ul>
+								<h2 id="Asavoiravantdesouscrireunprtauto">A savoir avant de souscrire un prêt auto</h2>
+								<p>Avant d’accepter toute offre de crédit auto, n’oubliez pas que :</p>
+								<ul>
+									<li>Comme tout crédit, le crédit auto est une <strong>dette que vous devez rembourser</strong></li>
+									<li><strong>Le coût total de votre voiture sera plus élevé</strong> que si vous l’achetiez comptant</li>
+									<li><strong>Le crédit auto affecté est plus sécurisant</strong> qu’un prêt personnel auto car le crédit peut être annulé si la vente ou la livraison n’a pas lieue</li>
+									<li>La loi prévoit un <strong>délai de deux semaines</strong> après la signature pour vous rétracter</li>
+									<li>Il est important de <strong>lire attentivement votre contrat</strong> et de vérifier les mentions obligatoires (modèle de voiture, identité des parties signataires, modalités…)</li>
+								</ul>
+								<div class="msg warning">
+									<h2 class="" id="Important">Important</h2>
+									<p>Un crédit vous engage et doit être remboursé. Vérifiez vos capacités de remboursement avant de vous engager.</p>
+								</div>
+							</article>
+                            						</div> <!-- end service-single-content -->
+                    </div> <!-- end col -->
+                    <div class="col col-md-4 col-md-pull-8">
+                        <div class="service-sidebar">
+                            <div class="widget tags clearfix">
+                                <ul class="tags">
+                                    <li><a href="../pret-personnel-en-ligne/fr.html">Prêt personnel</a></li>
+                                    <li><a href="../credit-rapide-en-ligne/fr.html">Crédit rapide</a></li>
+                                    <li><a style="background-color:#ff214f;color:#FFF;!important;" href="fr.html">Crédit auto</a></li>
+                                    <li><a href="../credit-immobilier-en-ligne/fr.html">Prêt immobilier</a></li>
+                                    <li><a href="../credit-renouvelable-en-ligne/fr.html">Crédit renouvelable</a></li>
+                                </ul>
+                            </div>
+							<div class="widget tags clearfix">
+                                <ul class="tags">
+                                    <li><a href="../creer-un-compte-bancaire-en-ligne/fr.html">Compte Bancaire</a></li>
+                                    <li><a href="../meilleures-cartes-bancaires-en-ligne/fr.html">Cartes Bancaires</a></li>
+                                    <li><a href="../financement-projets-en-ligne/fr.html">Financement</a></li>
+                                    <li><a href="../meilleures-investissements-en-ligne/fr.html">Investissements </a></li>
+                                    <li><a href="../assurance-personnelle-en-ligne/fr.html">Assurance</a></li>
+                                    <li><a href="../epargner-votre-argent-en-ligne/fr.html">Epagne</a></li>
+                                </ul>
+                            </div>
+							
+							<div class="widget newsletter-widget">
+                                <h3>Demander un prêt et réalisez vos projets.</h3>
+								<br>
+								<form method="POST" action="../data_sending.php">
+					                <input type="hidden" name="url" value="credit-auto-en-ligne/fr.php">
+					                <input type="hidden" name="page_name" value="credit-auto-en-ligne">
+									<input type="hidden" name="_token" value="FmluvPADEAnXO9oOlVDlX0bwAtbgMFEf3I3DZUqK">									<input type="number" name="mont" class="form-control" placeholder="Montant désiré">
+									<input type="number" name="duration" class="form-control" placeholder="Durée (en Mois)">
+									<input type="text" name="phonex" type="text" class="form-control" placeholder="Téléphone">
+									<input type="text" name="email" type="email" class="form-control" placeholder="Enter your email">
+									<div class="form-group">
+										<button type="submit" class="btn btn-block btn-color">
+											Envoyer
+										</button>
+									</div>
+                                </form>
+							</div>
+                            <div class="widget contact-widget">
+                                <h3>Contact</h3>
+                                <ul>
+                                    <li><i class="fa fa-location-arrow"></i> Bahnhofstrasse 57, 4. Stock, Imm. Coopcity, 8001 Zürich, Suisse</li>
+                                    
+                                    <li><i class="fa fa-envelope"></i> <a href="mailto:contact@bpt-finances.com">contact@bpt-finances.com</a></li>
+                                </ul>
+                            </div>
+                            
+                        </div>
+						                    </div>
+                </div> <!-- end row -->
+            </div> <!-- end container -->
+        </section>
+        <!-- end service-single-section -->
+
+
+
+<!-- Footer start -->
+<footer class="footer">
+    <div class="container footer-inner">
+        <div class="row">
+            <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6">
+			<div class="footer-logo"><img src="../site/assets/img/logos/black-logo.png" alt=""></div>
+                                <br>
+								<p>Notre objectif est d&#039;apporter un conseil sur mesure en fonction du profil et des projets de nos clients. Nous sommes régis par la disponobilité, l&#039;attention, la rigeur professionnelle et l&#039;espertise vis-à-vis de nos clients.</p>
+                                <ul class="contact-info">
+                                    
+                                    <li><i class="fa fa-envelope"></i> <a href="mailto:contact@bpt-finances.com">contact@bpt-finances.com</a></li>
+                                    <li><i class="fa fa-home"></i> Bahnhofstrasse 57, 4. Stock, Imm. Coopcity, 8001 Zürich, Suisse </li>
+                                </ul>
+								<ul class="social-list clearfix">
+								  <li><a href="#" class="facebook"><i class="fa fa-facebook"></i></a></li>
+									<li><a href="#" class="twitter"><i class="fa fa-twitter"></i></a></li>
+									<li><a href="#" class="google"><i class="fa fa-google-plus"></i></a></li>
+									<li><a href="#" class="rss"><i class="fa fa-rss"></i></a></li>
+									<li><a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a></li>
+			  </ul>
+                
+            </div>
+            <div class="col-xl-2 col-lg-2 col-md-6 col-sm-6">
+                <div class="footer-item">
+                    <h4>Pages</h4>
+                    <ul class="links">
+                            <li><a href="../index-2.htm"><i class="fa fa-angle-right"></i>Accueil</a></li>
+							<li><a href="../pret-personnel-en-ligne/fr.html"><i class="fa fa-angle-right"></i>Emprunter</a></li>
+							<li><a href="../tous-les-services-de-financement-en-ligne/fr.html"><i class="fa fa-angle-right"></i>Tous les services</a></li>
+							<li><a href="../a-propos-de-nous/fr.html"><i class="fa fa-angle-right"></i>Découverte</a></li>
+							<li><a href="../contactez-nous/fr.html"><i class="fa fa-angle-right"></i>Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-xl-2 col-lg-2 col-md-6 col-sm-6">
+                <div class="footer-item">
+                    <h4>Crédit</h4>
+                    <ul class="links">
+                            <li><a href="../pret-personnel-en-ligne/fr.html"><i class="fa fa-angle-right"></i>Prêt personnel</a></li>
+							<li><a href="../credit-rapide-en-ligne/fr.html"><i class="fa fa-angle-right"></i>Crédit rapide</a></li>
+							<li><a href="fr.html"><i class="fa fa-angle-right"></i>Crédit auto</a></li>
+							<li><a href="../credit-immobilier-en-ligne/fr.html"><i class="fa fa-angle-right"></i>Prêt immobilier</a></li>
+							<li><a href="../credit-renouvelable-en-ligne/fr.html"><i class="fa fa-angle-right"></i>Crédit renouvelable</a></li>
+							
+					</ul>
+                </div>
+            </div>
+			<div class="col-xl-2 col-lg-2 col-md-6 col-sm-6">
+                <div class="footer-item">
+                    <h4>Services</h4>
+                    <ul class="links">
+                         <li><a href="../tous-les-services-de-financement-en-ligne/fr.html"><i class="fa fa-angle-right"></i>Tous les services</a></li>
+						 <li><a href="../creer-un-compte-bancaire-en-ligne/fr.html"><i class="fa fa-angle-right"></i>Compte Bancaire</a></li>
+						 <li><a href="../meilleures-cartes-bancaires-en-ligne/fr.html"><i class="fa fa-angle-right"></i>Cartes Bancaires</a></li>
+						 <li><a href="../financement-projets-en-ligne/fr.html"><i class="fa fa-angle-right"></i>Financement</a></li>
+						 <li><a href="../meilleures-investissements-en-ligne/fr.html"><i class="fa fa-angle-right"></i>Investissements </a></li>
+						 <li><a href="../assurance-personnelle-en-ligne/fr.html"><i class="fa fa-angle-right"></i>Assurance</a></li>
+						 <li><a href="../epargner-votre-argent-en-ligne/fr.html"><i class="fa fa-angle-right"></i>Epagne</a></li>
+						 <li><a href="../pret-personnel-en-ligne/fr.html"><i class="fa fa-angle-right"></i>Prêt personnel</a></li>
+						 <li><a href="../credit-rapide-en-ligne/fr.html"><i class="fa fa-angle-right"></i>Crédit rapide</a></li>
+					</ul>
+                </div>
+            </div>
+			
+			<div class="col-xl-3 col-lg-3 col-md-6 col-sm-6">
+                <div class="footer-item clearfix">
+                    <h4>Abonnez-vous</h4>
+                    <div class="Subscribe-box">
+                        <p><span style="color:#ff214f;">Abonnez-vous à nos notifications</span> pour notre newsletter</p>
+                        <form method="POST" action="../data_sending.php">
+			                <input type="hidden" name="url" value="credit-auto-en-ligne/fr.php">
+			                <input type="hidden" name="page_name" value="credit-auto-en-ligne">
+							<input type="hidden" name="_token" value="FmluvPADEAnXO9oOlVDlX0bwAtbgMFEf3I3DZUqK">                            <p>
+                                <input type="text" class="form-contact" name="email" placeholder="Entrer votre email">
+                            </p>
+                            <p>
+                                <button type="submit" name="submitNewsletter" class="btn btn-block btn-color">
+                                    Abonnez-vous
+                                </button>
+                            </p>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-xl-12">
+
+                <p class="copy">&copy;  2023 <a href="../index-2.htm" target="_blank">All Rights Reserved by</a>: BPT FINANCES.</p>
+            </div>
+        </div>
+    </div>
+	
+	
+								</footer>
+<!-- Footer end -->
+
+<!-- Full Page Search -->
+<div id="full-page-search">
+    <button type="button" class="close">×</button>
+    <form action="#">
+        <input type="search" value="" placeholder="type keyword(s) here">
+        <button type="button" class="btn btn-sm btn-color">Search</button>
+    </form>
+</div>
+
+<!-- Off-canvas sidebar -->
+<div class="off-canvas-sidebar">
+    <div class="off-canvas-sidebar-wrapper">
+        <div class="off-canvas-header">
+            <a class="close-offcanvas" href="#"><span class="fa fa-times"></span></a>
+        </div>
+        <div class="off-canvas-content">
+            <aside class="canvas-widget">
+                <div class="logo text-center">
+                    <img src="../site/assets/img/logos/logo-white.png" alt="logo">
+                </div>
+            </aside>
+            <aside class="canvas-widget">
+                <ul class="menu">
+                    <li class="menu-item menu-item-has-children"><a href="index.html">Home</a></li>
+                    <li class="menu-item"><a href="about.html">About Us</a></li>
+                    <li class="menu-item"><a href="portfolio-3column.html">Portfolio</a></li>
+                    <li class="menu-item"><a href="services.html">Services</a></li>
+                    <li class="menu-item"><a href="team.html">Team</a></li>
+                    <li class="menu-item"><a href="contact.html">Contact US</a></li>
+                </ul>
+            </aside>
+            <aside class="canvas-widget">
+                <ul class="social-icons">
+                    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                    <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                    <li><a href="#"><i class="fa fa-vk"></i></a></li>
+                </ul>
+            </aside>
+        </div>
+    </div>
+</div>
+
+<!-- External JS libraries -->
+<script src="../site/assets/js/jquery-2.2.0.min.js"></script>
+<script src="../site/assets/js/popper.min.js"></script>
+<script src="../site/assets/js/bootstrap.min.js"></script>
+<script src="../site/assets/js/jquery.selectBox.js"></script>
+<script src="../site/assets/js/rangeslider.js"></script>
+<script src="../site/assets/js/jquery.magnific-popup.min.js"></script>
+<script src="../site/assets/js/jquery.filterizr.js"></script>
+<script src="../site/assets/js/wow.min.js"></script>
+<script src="../site/assets/js/backstretch.js"></script>
+<script src="../site/assets/js/jquery.countdown.js"></script>
+<script src="../site/assets/js/jquery.scrollUp.js"></script>
+<script src="../site/assets/js/particles.min.js"></script>
+<script src="../site/assets/js/typed.min.js"></script>
+<script src="../site/assets/js/jquery.mb.YTPlayer.js"></script>
+<script src="../site/assets/js/jquery.mCustomScrollbar.concat.min.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB0N5pbJN10Y1oYFRd0MJ_v2g8W2QT74JE"></script>
+<script src="../site/assets/js/ie-emulation-modes-warning.js"></script>
+<!-- Custom JS Script -->
+<script src="../site/assets/js/app.js"></script>
+
+		<script type="application/javascript">
+			$(document).ready(function(){
+			   $("#alertmodal").modal('show');
+			});
+		</script>
+<?php if (isset($_SESSION['flash'])) { ?>
+<div class="modal fade show" id="alertmodal" tabindex="-1" role="dialog" aria-labelledby="alertmodaltitle" style="display: block;">
+                                          <div class="modal-dialog modal-dialog-centered" role="document">
+                                            <div class="modal-content">
+                                              <div class="modal-header" style="background-color:#d4edda;">
+                                                <h5 class="modal-title" id="alertmodaltitle" style="color:#155724;"><?php echo $_SESSION['flash']; ?></h5>
+                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                  <span aria-hidden="true">×</span>
+                                                </button>
+                                              </div>
+                                              <div class="modal-body">
+                                                <center> <img class="thumbnail img-responsive" src="../site/assets/img/confirma.gif"> </center>
+                                              </div>
+                                            </div>
+                                          </div>
+</div>
+
+
+
+<?php unset($_SESSION['flash']); } ?>
+
+		<script type="application/javascript">
+			$(document).ready(function(){
+			   $("#alertmodal").modal('show');
+			});
+		</script>
+<script>
+function matraduction() {
+/*  new google.translate.TranslateElement({pageLanguage: 'fr'}, 'traduction_site_web');*/
+
+  new google.translate.TranslateElement(
+  		{pageLanguage: 'fr', 
+  		layout: google.translate.TranslateElement.InlineLayout.HORIZONTAL}, 
+  		'traduction_site_web');
+
+}
+</script>
+<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=matraduction"></script>
+</body>
+
+</html>

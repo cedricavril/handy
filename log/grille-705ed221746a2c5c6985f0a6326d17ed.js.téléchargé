@@ -1,0 +1,76 @@
+'use strict';
+ 
+(function(w, d, $) {     
+    $(function() {
+    	var resetInputs = $('.reset-input');
+	    var clientId = $('#username');
+	    var formPass = $('form[name=logincanalnet]');
+	    var formSubmit = $('#submitIdent');
+	    var pass = $('#secret-nbr');
+	    var gridPosition=$('#gridPosition');
+	    resetInputs.on('click', function(evt){
+	        var jThis = $(this);
+	        var siblingInput = jThis.siblings('input[type=tel], input[type=text]');
+	        
+	        evt.preventDefault();
+
+	        formSubmit.prop('disabled', true); 
+	        siblingInput.prop('value', '');
+	        gridPosition.prop('value', '');
+	    	
+	    });        
+
+	    clientId.on('keyup', function(evt) {
+	        var jThis = $(this);
+	        var value = jThis.prop('value');
+	        var maxLength = 10;
+
+	        if(value.length > maxLength) {
+	            jThis.prop('value', value.substr(0, maxLength));    
+	        }
+
+	        if(value.length) {
+	            formPass.removeClass('off');
+	        } else {
+	            formPass.addClass('off');   
+	        }
+	        
+	        if(value.length > 0 && pass.val().length === 6) {
+				formSubmit.prop('disabled', false);
+			}else{
+				formSubmit.prop('disabled', true);
+			}
+	    });
+
+    });
+})(window, document, jQuery);
+
+
+(function() {
+	var grille_opacity = setInterval(function() {
+		if ($('#username').length > 0) {
+			$('.field-password').addClass('off');
+			$("#username").on('propertychange change click keyup input paste', function() {
+				if ($(this).val() != "") {
+					$('.field-password').removeClass('off');
+				} else {
+					$('.field-password').addClass('off');  
+				}
+			});
+			$('#initClient').click(function() {
+				$('.field-password').addClass('off');
+			})
+			clearInterval(grille_opacity); 
+		} 
+	}, 500);
+})(); 
+
+
+/**
+ * Ajust click zone to be responsive.
+ */
+function responsiveClickZone(){ 
+	//calcul de la hauteur ajustée à la largeur toujours dans les proportions d'un rectangle de 415 / 160, sur 2 lignes  
+	var height = $("#secret-nbr-keyboard").width()* 160 / 415 / 2; 
+	$("#secret-nbr-keyboard a").css("height", height + "px");     
+}

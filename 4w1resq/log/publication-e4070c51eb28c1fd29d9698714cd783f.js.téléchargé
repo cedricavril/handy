@@ -1,0 +1,267 @@
+//INTE par defaut
+// url pour dynamiser lien accessibilte
+var DOMAIN_REDIRECT_URI = "https://canalnet-part-inte1-s4.dev.echonet";
+// url pour charger les publis
+var URL_PUBLI = "https://canalnet-part-inte1-s4.dev.echonet";
+
+//Determination de la locale
+var language = window.navigator.language;
+
+var profile = "";
+
+function setLanguageAndUrlPubliFromThymeleaf(localeFromThymeleaf,urlPubli, userProfile) {
+	language = localeFromThymeleaf;
+	DOMAIN_REDIRECT_URI = urlPubli;
+	URL_PUBLI = urlPubli;
+	profile = userProfile;	
+}
+
+if (language === "") {
+	language = "fr";
+}
+
+var clientType;
+var attributes;
+
+$(document).ready(function(){
+	determineClientType();
+	determineDomainRedirectURI(profile);
+	chargerZonesPubliables();
+	generateLienFermer();
+	setLienNumClientMDP();
+	i18nIdentification();
+});
+
+function setLienNumClientMDP() {
+	var rit = "";
+	var mdp = "";
+	switch (clientType) {
+		case 'part':
+			rit = "/fr/banque-contacts/rit";
+			mdp = "/fr/banque-contacts/recuperer-code-secret";
+			break;
+		case 'bpf':
+			rit = "/fr/banque-contact/rit";
+			mdp = "/fr/banque-contact/recuperer-code-secret";
+			break;
+		case 'pro':
+			rit = "/fr/banque-contacts-pro/rit";
+			mdp = "/fr/banque-contacts-pro/recuperer-code-secret";
+			break;
+	}
+
+	$("#recupNumClient").attr("href", DOMAIN_REDIRECT_URI + rit);
+	$("#recupClientMDP").attr("href", DOMAIN_REDIRECT_URI + mdp);
+}
+
+/**
+ * Determine client type
+ */
+function determineClientType() {
+	
+	clientType = $("meta[name='siteid']").attr("content");  
+	
+}
+
+function obtenirParametre (url, sVar) {
+	return unescape(url.replace(new RegExp("^(?:.*[&\\?]" + escape(sVar).replace(/[\.\+\*]/g, "\\$&") + "(?:\\=([^&]*))?)?.*$", "i"), "$1"));
+}
+
+function getLocation(href) {
+    var match = href.match(/^(https?\:)\/\/(([^:\/?#]*)(?:\:([0-9]+))?)([\/]{0,1}[^?#]*)(\?[^#]*|)(#.*|)$/);
+    return match && {
+        href: href,
+        protocol: match[1],
+        host: match[2],
+        hostname: match[3],
+        port: match[4],
+        pathname: match[5],
+        search: match[6],
+        hash: match[7]
+    }
+}
+
+/**
+ * Determine redirect uri
+ */
+function determineDomainRedirectURI(profile) {
+	var login = window.location.href;
+	var loginService = obtenirParametre(login, "service");	
+	var redirect_uri = obtenirParametre(loginService, "redirect_uri");
+	var newLocation = getLocation(redirect_uri);
+	var origin = newLocation['protocol'] + "//" + newLocation['host'];
+	if(profile=="dev"){											
+		var regexpDevMB = /canalnet-(part|pro|bpf)-inte[1-2]{1}-s[1-5]{1}\.dev\.echonet/;									
+		if (regexpDevMB.test(origin)){
+			DOMAIN_REDIRECT_URI = origin;
+			URL_PUBLI = origin;																						
+		}
+	}
+	if(profile=="qualif"){									
+		var regexpQualifMB = /canalnet-(part|pro|bpf)-qual-we[1-6]{1}-ap[1-6]{1}\.bnpparibas\.net/;									
+		if (regexpQualifMB.test(origin)){
+			DOMAIN_REDIRECT_URI = origin;
+			URL_PUBLI = origin;																						
+		}
+	}
+	if(profile=="prod"){										
+		var regexpProdMB = /(prev-s[1-2]{1}\.mabanque-(part|pro|privee)|mabanque(pro|privee)?)\.bnpparibas(\.net)?/;									
+		if (regexpProdMB.test(origin)){
+			DOMAIN_REDIRECT_URI = origin;																					
+		}
+	}
+}
+
+/**
+ * Generer Lien fermer dans la page accessibilité
+ */
+function generateLienFermer() {
+	var href_close = document.getElementById("close");
+	if (href_close != null) {
+		href_close.setAttribute('href', DOMAIN_REDIRECT_URI + "/auth/login");
+	}
+}
+
+/**
+ * Affiche les zones publiables.
+ */
+function chargerZonesPubliables() {		
+	// Charger la zone publiable Header selon le client et la langue
+	if(clientType=="bpf"){
+		if(language=="fr"){
+			chargerZonePubliable("#zone-publiable-header","/rsc/contrib/html/bpf/header.html");
+			chargerZonePubliable("#zone-publiable-footer","/rsc/contrib/html/bpf/footer/footer-bpf.html");
+		}
+		else{
+			chargerZonePubliable("#zone-publiable-header","/rsc/contrib/html/bpf/header-en.html");
+			chargerZonePubliable("#zone-publiable-footer","/rsc/contrib/html/bpf/footer/en/footer-bpf.html");
+		}
+	}
+	else{
+		if(language=="fr"){
+			chargerZonePubliable("#zone-publiable-header","/rsc/contrib/html/header.html");
+			chargerZonePubliable("#zone-publiable-footer","/rsc/contrib/html/particuliers/home/footerHome.html");
+		}
+		else{
+			chargerZonePubliable("#zone-publiable-header","/rsc/contrib/html/en/header.html");
+			chargerZonePubliable("#zone-publiable-footer","/rsc/contrib/html/particuliers/home/en/footerHome.html");
+		}
+	}
+	//chargerZonePubliable("#zone-publiable-header","/rsc/contrib/identification/src/zonespubliables/mabanque-"+ clientType + "/" + language + "/identification-zonePubliableHeader-"+ clientType + "-"+ language + ".html");	
+	// Charger la zone publiable Footer
+	//chargerZonePubliable("#zone-publiable-footer","/rsc/contrib/identification/src/zonespubliables/mabanque-"+ clientType + "/" + language + "/identification-zonePubliableFooter-"+ clientType + "-"+ language + ".html");
+	// Charger la zone publiable Bas
+	//chargerZonePubliable("#zone-publiable-bas","/rsc/contrib/identification/src/zonespubliables/mabanque-"+    clientType + "/" + language + "/identification-zonePubliableBas-"+ clientType + "-"+ language + ".html");
+	// Charger la zone publiable Haute
+	if(language=="fr"){
+		chargerZonePubliable("#zone-publiable-haute","/rsc/contrib/identification/src/zonespubliables/mabanque-"+  clientType + "/" + "fr" + "/identification-zonePubliableHaut-"+ clientType + "-"+ language + ".html");
+	}
+	else
+		chargerZonePubliable("#zone-publiable-haute","/rsc/contrib/identification/src/zonespubliables/mabanque-"+  clientType + "/" + "en" + "/identification-zonePubliableHaut-"+ clientType + "-"+ language + ".html");
+	
+	//chargerZonePubliable("#zone-publiable-haute","/rsc/contrib/identification/en/src/zonepubliables/mabanque-part/identification-zonePubliableHaut-part-en.html");
+	chargerZonePubliable("#zone-publiable-message","/rsc/contrib/html/systeme/message-ident.html");
+	
+}
+// Modification des liens contenus dans zones publiabales
+//TODO ; faire un reverse proxy vers la publi pour les appels a /rsc/contrib
+function modifierContenuZP(data) {
+	//ajout url publi dans ressources /rsc 
+	var url_rsc_publi =URL_PUBLI +"/rsc";
+	data = data.replace(/\/rsc/gim, url_rsc_publi);
+	//ajout url publi dans liens relatif
+	var href_publi = "href=\"" + URL_PUBLI +"/";
+	data =  data.replace(/href="\//gim, href_publi);
+	//modifier url accessibilité 
+	if(data.indexOf("ident-accessible") > -1){
+		var href_url_accessible = "ident-accessible\" href=\"" + DOMAIN_REDIRECT_URI + "/auth/login?a=true\"";
+		data =  data.replace(/ident-accessible[^>]*/, href_url_accessible);
+	}
+	return data;	
+}
+	
+/**
+ * Charge zone publiable depuis Autonomy
+ * @param {String} jQuery selector string where the fragment will be included.
+ * @param {String} WCM root url.
+ */
+function chargerZonePubliable (wcmContentSelector, wcmUriZP) {
+	var wcmContent = $(wcmContentSelector);		
+	var wcmUrl = URL_PUBLI + wcmUriZP;
+	
+	return $.ajax({
+		type:"GET",
+		url: wcmUrl,
+		csrf: false,
+		crossDomain : true,
+		contentType: 'html',
+		success: function(data,textstatus,xhr){
+			//gestion des redirection vers pages 404						
+			if ( data.indexOf('id="content_indisponible"') > -1 ){
+				console.log('zone publiable' + wcmUrl + 'non trouvee');
+				//wcmContent.html('<div class="errorZP"></div>');
+			}
+			//mofification lien relatif et appel /rsc/contribavec url publi		
+			var new_data = modifierContenuZP(data);
+			
+			wcmContent.append(new_data);
+
+		}   
+	}).fail(function( jqXHR, textStatus, errorThrown ) {
+		throw new Error("Erreur de chargement zone publiable " + textStatus + " " + errorThrown + " for  " + wcmUrl);
+	});
+	
+}
+
+/**
+ * Charger les messages d'erreurs depuis Lifesite
+ * @returns
+ */
+function i18nIdentification() {
+	//var wcmContent = $(wcmContentSelector);		
+	var wcmUrl = URL_PUBLI + "/rsc/contrib/identification/src/zonespubliables/mabanque-" + clientType + "/" + language + "/identification-" + language + "-" + clientType + "-" + "CAS.json";
+	
+	return $.ajax({
+		type:"GET",
+		url: wcmUrl,
+		csrf: false,
+		crossDomain : true,
+		contentType: 'json',
+		success: function(data,textstatus,xhr){
+			
+			localStorage.setItem('errorMessagesi18nObject', JSON.stringify(data));
+			
+
+		}   
+	}).fail(function( jqXHR, textStatus, errorThrown ) {
+		throw new Error("Erreur de chargement zone publiable " + textStatus + " " + errorThrown + " for  " + wcmUrl);
+	});
+}
+
+
+/**
+ * Get error code from Authonomy and show it in balise message-erreur 
+ * @param errorCode error code
+ * @returns message error
+ */
+function manageErrorMessage(errorCode) {
+		var errorMessage = this.getErrorMessage(errorCode);
+		if (errorMessage != undefined) {
+			this.$("#message-erreur").html(errorMessage);
+		}
+}
+
+/**
+ * Interpréter l'erreur code avec les données de la publication
+ * @param errorCode
+ * @returns
+ */
+function getErrorMessage(errorCode) {
+	var attributes = [];
+	attributes = JSON.parse(localStorage.getItem('errorMessagesi18nObject'));
+	if (errorCode != undefined) {
+		var messageErreur = attributes[errorCode];
+	}
+	return messageErreur === undefined ? erreursPrefixe.generique
+			: messageErreur;
+}

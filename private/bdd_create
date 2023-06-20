@@ -1,0 +1,8 @@
+CREATE DATABASE IF NOT EXISTS handy;
+SELECT DATABASE dbtest;
+CREATE TABLE  IF NOT EXISTS `chat` (
+    `ID` int(11) NOT NULL,
+    `pseudo` varchar(255) NOT NULL,
+    `message` varchar(255) NOT NULL,
+    `timestamp` int(15) NOT NULL
+) ENGINE=MyISAM DEFAULT CHARSET=latin1;

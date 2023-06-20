@@ -1,0 +1,72 @@
+
+[2023-02-11 12:53:36] merlin-logger.DEBUG: The welcome step has been displayed [] []
+
+[2023-02-11 12:54:16] merlin-logger.DEBUG: The welcome step has been displayed [] []
+
+[2023-02-11 12:54:50] merlin-logger.DEBUG: The child theme installation step has been displayed [] []
+
+[2023-02-11 12:54:52] merlin-logger.DEBUG: The child theme style.css content was generated [] []
+
+[2023-02-11 12:54:52] merlin-logger.DEBUG: The child theme functions.php content was generated [] []
+
+[2023-02-11 12:54:52] merlin-logger.DEBUG: The child theme screenshot was copied to the child theme, with the following result {"copied":true} []
+
+[2023-02-11 12:54:52] merlin-logger.DEBUG: The newly generated child theme was activated [] []
+
+[2023-02-11 12:54:57] merlin-logger.DEBUG: The plugin installation step has been displayed [] []
+
+[2023-02-11 12:54:59] merlin-logger.DEBUG: A plugin with the following data will be processed {"plugin_slug":"contact-form-7","message":"Activating"} []
+
+[2023-02-11 12:55:01] merlin-logger.DEBUG: A plugin with the following data was processed {"plugin_slug":"contact-form-7"} []
+
+[2023-02-11 12:55:01] merlin-logger.DEBUG: A plugin with the following data will be processed {"plugin_slug":"elementor","message":"Activating"} []
+
+[2023-02-11 12:55:03] merlin-logger.DEBUG: A plugin with the following data was processed {"plugin_slug":"elementor"} []
+
+[2023-02-11 12:55:03] merlin-logger.DEBUG: A plugin with the following data will be processed {"plugin_slug":"finbank-plugin","message":"Activating"} []
+
+[2023-02-11 12:55:04] merlin-logger.DEBUG: A plugin with the following data will be processed {"plugin_slug":"finbank-plugin","message":"Activating"} []
+
+[2023-02-11 12:55:04] merlin-logger.DEBUG: A plugin with the following data will be processed {"plugin_slug":"mailchimp-for-wp","message":"Activating"} []
+
+[2023-02-11 12:55:05] merlin-logger.DEBUG: A plugin with the following data was processed {"plugin_slug":"mailchimp-for-wp"} []
+
+[2023-02-11 12:55:09] merlin-logger.DEBUG: The content import step has been displayed [] []
+
+[2023-02-11 12:55:11] merlin-logger.ERROR: The content import AJAX call failed with this passed data {"selected_content_index":0,"importing_content":"content","importing_data":null} []
+
+[2023-02-11 12:55:12] merlin-logger.INFO: The content import AJAX call will be executed with this import data {"title":"Widgets","data":"/htdocs/wd1/wp-content/themes/finbank/demo-import/content/widgets.json"} []
+
+[2023-02-11 12:55:12] merlin-logger.DEBUG: Default Sidebar :   Rechercher - No Title - Imported Articles récents - No Title - Imported Commentaires récents - No Title - Imported  Footer Widget :   finbank_about_company - No Title - Site does not support widget Pages - Services - Imported finbank_contact_info - Contact - Site does not support widget finbank_subscribe_form - Newsletter - Site does not support widget  Blog Listing :   Rechercher - Search - Imported Catégories - Categories - Imported finbank_latest_news - Latest News - Site does not support widget finbank_popular_gallery - Popular Gallery - Site does not support widget Nuage d’étiquettes - Tags - Imported   [] []
+
+[2023-02-11 12:55:13] merlin-logger.INFO: The content import AJAX call will be executed with this import data {"title":"Redux Options","data":[{"file_path":"/htdocs/wd1/wp-content/themes/finbank/demo-import/content/redux_options.json","option_name":"finbank_options"}]} []
+
+[2023-02-11 12:55:13] merlin-logger.ERROR: The content import AJAX call failed with this passed data {"selected_content_index":0,"importing_content":"redux","importing_data":[{"file_path":"/htdocs/wd1/wp-content/themes/finbank/demo-import/content/redux_options.json","option_name":"finbank_options"}]} []
+
+[2023-02-11 12:55:13] merlin-logger.INFO: The content import AJAX call will be executed with this import data {"title":"After import setup","data":0} []
+
+[2023-02-11 12:55:18] merlin-logger.DEBUG: The final step has been displayed [] []
+
+[2023-02-12 12:23:30] merlin-logger.DEBUG: The welcome step has been displayed [] []
+
+[2023-02-12 12:23:43] merlin-logger.DEBUG: The welcome step has been displayed [] []
+
+[2023-02-12 12:24:03] merlin-logger.DEBUG: The child theme installation step has been displayed [] []
+
+[2023-02-12 12:24:06] merlin-logger.DEBUG: The plugin installation step has been displayed [] []
+
+[2023-02-12 12:24:08] merlin-logger.DEBUG: The content import step has been displayed [] []
+
+[2023-02-12 12:24:17] merlin-logger.ERROR: The content import AJAX call failed with this passed data {"selected_content_index":0,"importing_content":"content","importing_data":null} []
+
+[2023-02-12 12:24:18] merlin-logger.INFO: The content import AJAX call will be executed with this import data {"title":"Widgets","data":"/htdocs/wd1/wp-content/themes/finbank/demo-import/content/widgets.json"} []
+
+[2023-02-12 12:24:18] merlin-logger.DEBUG: Default Sidebar :   Rechercher - No Title - Imported Articles récents - No Title - Imported Commentaires récents - No Title - Imported  Footer Widget :   Finbank About Company - No Title - Imported Pages - Services - Imported finbank_contact_info - Contact - Site does not support widget finbank_subscribe_form - Newsletter - Site does not support widget  Blog Listing :   Rechercher - Search - Imported Catégories - Categories - Imported finbank_latest_news - Latest News - Site does not support widget finbank_popular_gallery - Popular Gallery - Site does not support widget Nuage d’étiquettes - Tags - Imported   [] []
+
+[2023-02-12 12:24:18] merlin-logger.INFO: The content import AJAX call will be executed with this import data {"title":"Redux Options","data":[{"file_path":"/htdocs/wd1/wp-content/themes/finbank/demo-import/content/redux_options.json","option_name":"finbank_options"}]} []
+
+[2023-02-12 12:24:18] merlin-logger.DEBUG: The Redux Framework data was imported {"file_path":"/htdocs/wd1/wp-content/themes/finbank/demo-import/content/redux_options.json","option_name":"finbank_options"} []
+
+[2023-02-12 12:24:19] merlin-logger.INFO: The content import AJAX call will be executed with this import data {"title":"After import setup","data":0} []
+
+[2023-02-12 12:24:24] merlin-logger.DEBUG: The final step has been displayed [] []
